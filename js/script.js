@@ -6,7 +6,7 @@ var splide = new Splide('.splide', {
     pauseOnHover: true,
     arrows: false,
     pagination: false,
-    speed: 1200,
+    speed: 500,
   });
   
   splide.mount();
