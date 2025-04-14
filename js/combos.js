@@ -1,15 +1,26 @@
 function abrirModal(id) {
-    document.getElementById(id).style.display = 'block';
+  const modal = document.getElementById(id);
+  if (modal) modal.style.display = 'block';
+}
+
+function cerrarModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) modal.style.display = 'none';
+}
+
+// Cerrar con ESC
+window.addEventListener('keydown', function(e) {
+  if (e.key === "Escape") {
+    const abierto = document.querySelector('.modal[style*="display: block"]');
+    if (abierto) abierto.style.display = 'none';
   }
-  
-  function cerrarModal(id) {
-    document.getElementById(id).style.display = 'none';
-  }
-  
-  // Cerrar modal con tecla ESC
-  window.addEventListener('keydown', function(e) {
-    if (e.key === "Escape") {
-      document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+});
+
+// Cerrar al hacer clic fuera del contenido
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
     }
   });
-  
+});
