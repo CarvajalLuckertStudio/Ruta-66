@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinos & Licores | Ruta 66</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/combos.css">
+  <link rel="stylesheet" href="../../css/licores.css">
+</head>
+<body class="licores-page">
+
+  <header class="menu-header">
+    <a href="../menu/menut.html" class="back-btn">←</a>
+    <span class="logo-text">Vinos & Licores</span>
+  </header>
+
+  <div class="contenedor-licores">
+    <aside class="filtro-categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li class="activo" onclick="filtrar('todos')">Todos</li>
+        <li onclick="filtrar('cervezas')">Cervezas</li>
+        <li onclick="filtrar('micheladas')">Micheladas</li>
+        <li onclick="filtrar('licores')">Licores</li>
+        <li onclick="filtrar('tragos')">Tragos</li>
+        <li onclick="filtrar('vino-tinto')">Vino Tinto</li>
+        <li onclick="filtrar('vino-rosado')">Vino Rosado y Espumantes</li>
+        <li onclick="filtrar('vino-blanco')">Vino Blanco</li>
+      </ul>
+    </aside>
+
+    <main class="contenedor-productos">
+      <h2 class="titulo-categoria" id="categoria-titulo">Todos</h2>
+
+      <div class="grid-productos" id="productos-container">
+
+        <!-- 🔸 CERBEZAS -->
+        <section class="categoria-productos cervezas">
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/heineken.png" alt="Heineken">
+            <h4>Heineken</h4>
+            <p>$11.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/sol.png" alt="Sol">
+            <h4>Sol</h4>
+            <p>$11.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/tres-mulata.png" alt="Tres Cordilleras Mulata">
+            <h4>Tres Cordilleras Mulata</h4>
+            <p>$13.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/tres-blanca.png" alt="Tres Cordilleras Blanca">
+            <h4>Tres Cordilleras Blanca</h4>
+            <p>$13.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/tres-rosada.png" alt="Tres Cordilleras Rosada">
+            <h4>Tres Cordilleras Rosada</h4>
+            <p>$13.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/corona.png" alt="Corona">
+            <h4>Corona</h4>
+            <p>$13.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/stella.png" alt="Stella Artois">
+            <h4>Stella Artois</h4>
+            <p>$13.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/club-colombia.png" alt="Club Colombia Dorada">
+            <h4>Club Colombia Dorada</h4>
+            <p>$9.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/refajo.png" alt="Jarra De Refajo">
+            <h4>Jarra De Refajo</h4>
+            <p>$21.000</p>
+            <button>Ver</button>
+          </div>
+
+          <!-- Cubetazos -->
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/cubetazo-heineken.png" alt="Cubetazo Heineken">
+            <h4>Cubetazo Heineken</h4>
+            <p>$55.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/cubetazo-sol.png" alt="Cubetazo Sol">
+            <h4>Cubetazo Sol</h4>
+            <p>$55.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/cubetazo-corona.png" alt="Cubetazo Corona">
+            <h4>Cubetazo Corona</h4>
+            <p>$65.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/cubetazo-stella.png" alt="Cubetazo Stella">
+            <h4>Cubetazo Stella</h4>
+            <p>$65.000</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/cubetazo-club.png" alt="Cubetazo Club Colombia">
+            <h4>Cubetazo Club Colombia</h4>
+            <p>$42.500</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas nuevo">
+            <img src="../../imgs/cervezas/cubetazo-tres-cordilleras.png" alt="Cubetazo Tres Cordilleras">
+            <h4>Cubetazo Tres Cordilleras</h4>
+            <p>$65.000</p>
+            <button>Ver</button>
+          </div>
+
+          <!-- Otras -->
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/smirnoff-roja.png" alt="Smirnoff Roja 275 ml">
+            <h4>Smirnoff Roja 275 ML</h4>
+            <p>$16.500</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/cubetazo-smirnoff.png" alt="Cubetazo Smirnoff">
+            <h4>Cubetazo Smirnoff</h4>
+            <p>$82.500</p>
+            <button>Ver</button>
+          </div>
+
+          <div class="producto-card cervezas">
+            <img src="../../imgs/cervezas/modelo.png" alt="Modelo">
+            <h4>Modelo</h4>
+            <p>$18.000</p>
+            <button>Ver</button>
+          </div>
+        </section>
+
+        <!-- 🔸 MICHELADAS -->
+<section class="categoria-productos micheladas">
+  <div class="producto-card micheladas">
+    <img src="../../imgs/micheladas/michelada-tradicional.png" alt="Michelada Tradicional">
+    <h4>Michelada Tradicional</h4>
+    <p>$3.000</p>
+    <button onclick="abrirModal('modal-michelada-tradicional')">Ver</button>
+  </div>
+
+  <div class="producto-card micheladas">
+    <img src="../../imgs/micheladas/michelada-blue.png" alt="Michelada Blue">
+    <h4>Michelada Blue</h4>
+    <p>$4.000</p>
+    <button onclick="abrirModal('modal-michelada-blue')">Ver</button>
+  </div>
+</section>
+
+      </div>
+    </main>
+  </div>
+
+  
+
+  <script src="../../js/licores.js"></script>
+</body>
+</html>
