@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platos | Ruta 66</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/platos.css">
+</head>
+<body class="platos-page">
+
+  <header class="menu-header">
+    <a href="../menu/menut.html" class="back-btn">←</a>
+    <span class="logo-text">Platos</span>
+  </header>
+
+  <div class="contenedor-platos">
+    <button id="toggle-categorias"></button>
+    <aside class="filtro-categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li class="activo" onclick="filtrar('todos')">Todos</li>
+        <li onclick="filtrar('entradas')">Entradas</li>
+        <li onclick="filtrar('grill-66')">Grill 66</li>
+        <li onclick="filtrar('menu-infantil')">Menú Infantil</li>
+        <li onclick="filtrar('pastas')">Pastas</li>
+        <li onclick="filtrar('sandwiches')">Sándwiches</li>
+        <li onclick="filtrar('hamburguesas')">Hamburguesas</li>
+        <li onclick="filtrar('ruta-del-mar')">Ruta del Mar</li>
+        <li onclick="filtrar('lasagna')">Lasagna</li>
+        <li onclick="filtrar('arroces')">Arroces</li>
+        <li onclick="filtrar('ensalada-bowl')">Ensalada / Bowl</li>
+        <li onclick="filtrar('pizzas-tradicionales')">Pizzas Tradicionales</li>
+        <li onclick="filtrar('pizzas-gourmet')">Pizzas Gourmet</li>
+      </ul>
+    </aside>
+
+    <main class="contenedor-productos">
+      <h2 class="titulo-categoria" id="categoria-titulo">Todos</h2>
+      <div class="grid-productos" id="productos-container">
+        <!-- Aquí irán los platos -->
+      </div>
+    </main>
+  </div>
+
+  <script src="../../js/platos.js"></script>
+</body>
+</html>

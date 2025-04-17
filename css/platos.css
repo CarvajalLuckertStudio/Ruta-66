@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .menu-header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: #000;
+    color: #FFD700;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    /* Quitamos la línea extra */
+    border-bottom: none;
+  }
+  
+  .back-btn {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-right: 1em;
+  }
+  
+  .contenedor-platos {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+  }
+  
+  .filtro-categorias {
+    width: 250px;
+    background: #f5f0dc;
+    padding: 2em 1em;
+    border-right: 3px solid #FFD700;
+    transition: max-height 0.4s ease;
+  }
+  
+  .filtro-categorias h3 {
+    font-family: 'Cinzel', serif;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: none;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  .filtro-categorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filtro-categorias li {
+    padding: 0.6em 1em;
+    margin-bottom: 0.5em;
+    background: transparent;
+    color: #333;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .filtro-categorias li:hover,
+  .filtro-categorias li.activo {
+    background-color: #FFD700;
+    color: #000;
+    box-shadow: 0 0 10px rgba(255,215,0,0.3);
+  }
+  
+  .contenedor-productos {
+    flex: 1;
+    padding: 2em;
+  }
+  
+  .titulo-categoria {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #FFD700;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 0.3em;
+  }
+  
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+  
+  .producto-card {
+    background-color: #fff;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .producto-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(255,215,0,0.3);
+  }
+  
+  .producto-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 0.5em;
+  }
+  
+  .producto-card h4 {
+    color: #000;
+    margin-bottom: 0.3em;
+    font-size: 1rem;
+  }
+  
+  .producto-card p {
+    color: #FFD700;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  .producto-card button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .producto-card button:hover {
+    background-color: #FFD700;
+    color: #000;
+  }
+  
+  #toggle-categorias {
+    display: none;
+    color: #000;
+    width: 90%;
+    margin: 10px auto;
+    padding: 0.8em 1em;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: url('../imgs/BotonCategorias/categorrria.png'); /* RUTA CORRECTA AQUÍ */
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contenedor-platos {
+      flex-direction: column;
+      padding-top: 1em;
+    }
+  
+    #toggle-categorias {
+      display: block;
+    }
+  
+    .filtro-categorias {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      background-color: #f5f0dc;
+      z-index: 1000;
+      padding: 0;
+      border-right: none;
+      border-bottom: 3px solid #FFD700;
+    }
+  
+    .filtro-categorias.abierto {
+      max-height: 500px;
+      padding: 1em;
+    }
+  
+    .grid-productos {
+      grid-template-columns: 1fr;
+    }
+  
+    .titulo-categoria {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+  
