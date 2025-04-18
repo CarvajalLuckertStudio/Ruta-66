@@ -1,212 +1,204 @@
 .contenedor-licores {
-    display: flex;
-    min-height: 100vh;
-    background-color: #111;
-  }
-  
-  /* SIDEBAR */
-  .filtro-categorias {
-    width: 250px;
-    background: #f5f0dc;
-    padding: 2em 1em;
-    border-right: 3px solid #FFD700;
-    animation: slideInLeft 0.6s ease-in-out;
-  }
-  
-  .filtro-categorias h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1.5em;
-    font-family: 'Cinzel', serif;
-    color: #000;
-    text-transform: uppercase;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 0.5em;
-  }
-  
-  .filtro-categorias ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .filtro-categorias li {
-    padding: 0.7em 1em;
-    margin-bottom: 0.5em;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: #333;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  .filtro-categorias li:hover {
-    background-color: #FFD700;
-    color: #000;
-    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
-    transform: translateX(5px);
-  }
-  
-  .filtro-categorias li.activo {
-    background-color: #FFD700;
-    color: #000;
-    font-weight: bold;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 215, 0, 0.4);
-    transform: translateX(8px);
-  }
-  
-  /* TITULO DE CATEGORÍA */
-  .titulo-categoria {
-    font-family: 'Cinzel', serif;
-    font-size: 2rem;
-    color: #FFD700;
-    margin: 1em 0 0.5em 0;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 0.3em;
-    text-transform: uppercase;
-  }
-  
-  /* CONTENEDOR DE PRODUCTOS */
-  .contenedor-productos {
-    flex: 1;
-    padding: 2em;
-  }
-  
-  /* CATEGORÍA MODULAR */
-  .grid-productos {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
-  
-  .categoria-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em;
-  }
-  
-  /* PRODUCTO CARD */
-  .producto-card {
-    background-color: #fefefe;
-    border-radius: 10px;
-    padding: 1em;
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    border: 1px solid #FFD700;
-  }
-  
-  .producto-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
-  }
-  
-  .producto-card img {
-    height: 140px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 0.8em;
-  }
-  
-  .producto-card h4 {
-    margin-top: 0.5em;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  .producto-card p {
-    color: #FFD700;
-    margin: 0.5em 0;
-    font-weight: bold;
-  }
-  
-  .producto-card button {
-    background-color: #222;
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .producto-card button:hover {
-    background-color: #FFD700;
-    color: #000;
-  }
-  
-  /* ANIMACIONES */
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* RESPONSIVE */
-  @media screen and (max-width: 1024px) {
-    .categoria-productos {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .categoria-productos {
-      grid-template-columns: 1fr;
-    }
-  
-    .titulo-categoria {
-      text-align: center;
-      font-size: 1.5rem;
-    }
-  
+  display: flex;
+  min-height: 100vh;
+  background-color: #111;
+}
 
-    .contenedor-licores {
-      flex-direction: column;
-    }
-    /* BOTÓN DE CATEGORÍAS EN EL HP CELULAR */
-#toggle-categorias {
-  display: none;
-  color: #000;
-  width: 90%;
-  margin: 10px auto;
-  padding: 0.8em 1em;
-  border: none;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  background-image: url('../imgs/BotonCategorias/categorrria.png'); /* RUTA CORRECTA AQUÍ */
-  height: 120px;
+/* SIDEBAR */
+.filtro-categorias {
   width: 250px;
-  background-size: cover;
-  background-position: center;
+  background: #f5f0dc;
+  padding: 2em 1em;
+  border-right: 3px solid #FFD700;
+  animation: slideInLeft 0.6s ease-in-out;
+}
+
+.filtro-categorias h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5em;
+  font-family: 'Cinzel', serif;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.5em;
+}
+
+.filtro-categorias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filtro-categorias li {
+  padding: 0.7em 1em;
+  margin-bottom: 0.5em;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filtro-categorias li:hover {
+  background-color: #FFD700;
+  color: #000;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  transform: translateX(5px);
+}
+
+.filtro-categorias li.activo {
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 215, 0, 0.4);
+  transform: translateX(8px);
+}
+
+/* TITULO DE CATEGORÍA */
+.titulo-categoria {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  color: #FFD700;
+  margin: 1em 0 0.5em 0;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.3em;
+  text-transform: uppercase;
+}
+
+/* CONTENEDOR DE PRODUCTOS */
+.contenedor-productos {
+  flex: 1;
+  padding: 2em;
+}
+
+/* CATEGORÍA MODULAR */
+.grid-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.categoria-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+/* PRODUCTO CARD */
+.producto-card {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border: 1px solid #FFD700;
+}
+
+.producto-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
+}
+
+.producto-card img {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 0.8em;
+}
+
+.producto-card h4 {
+  margin-top: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.producto-card p {
+  color: #000 !important;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.producto-card button {
+  background-color: #222;
   color: #fff;
-  text-shadow: 1px 1px 2px #000;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.producto-card button:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+/* ANIMACIONES */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .categoria-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .categoria-productos {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-categoria {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .contenedor-licores {
+    flex-direction: column;
+  }
+
+  /* BOTÓN DE CATEGORÍAS EN EL HP CELULAR */
   #toggle-categorias {
     display: block;
-    margin-bottom: 0.5em;
+    margin: 10px auto 0.5em;
+    padding: 0.8em 1em;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: url('../imgs/BotonCategorias/categorrria.png');
+    height: 120px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
   }
 
   .contenedor-licores {
     position: relative;
-    flex-direction: column;
     padding-top: 1em;
   }
-/*la malparida configuracion del menu de categorias cuando se */
+
+  /* Menú lateral oculto en móvil */
   .filtro-categorias {
     position: absolute;
     top: 10px;
@@ -221,7 +213,7 @@
   }
 
   .filtro-categorias.abierto {
-    max-height: 500px; /* puedes ajustar según tus categorías */
+    max-height: 500px;
     padding: 1em;
   }
 
@@ -237,6 +229,3 @@
     font-size: 0.95rem;
   }
 }
-
-  }
-  
