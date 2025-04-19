@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platos | Ruta 66</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/combos.css">
   <link rel="stylesheet" href="../../css/platos.css">
 </head>
 <body class="platos-page">
@@ -16,6 +17,7 @@
 
   <div class="contenedor-platos">
     <button id="toggle-categorias"></button>
+
     <aside class="filtro-categorias">
       <h3>Categorías</h3>
       <ul>
@@ -29,7 +31,7 @@
         <li onclick="filtrar('ruta-del-mar')">Ruta del Mar</li>
         <li onclick="filtrar('lasagna')">Lasagna</li>
         <li onclick="filtrar('arroces')">Arroces</li>
-        <li onclick="filtrar('ensalada-bowl')">Ensalada / Bowl</li>
+        <li onclick="filtrar('ensaladas')">Ensaladas/Bowl</li>
         <li onclick="filtrar('pizzas-tradicionales')">Pizzas Tradicionales</li>
         <li onclick="filtrar('pizzas-gourmet')">Pizzas Gourmet</li>
       </ul>
@@ -37,8 +39,80 @@
 
     <main class="contenedor-productos">
       <h2 class="titulo-categoria" id="categoria-titulo">Todos</h2>
+
       <div class="grid-productos" id="productos-container">
-        <!-- Aquí irán los platos -->
+        <!-- 🔸 ENTRADAS -->
+<section class="categoria-productos entradas">
+  <div class="producto-card entradas">
+    <img src="../../imgs/platos/entradas-1.png" alt="Entradas 1">
+    <h4>Entradas 1</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card entradas">
+    <img src="../../imgs/platos/entradas-2.png" alt="Entradas 2">
+    <h4>Entradas 2</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card entradas">
+    <img src="../../imgs/platos/entradas-3.png" alt="Entradas 3">
+    <h4>Entradas 3</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card entradas">
+    <img src="../../imgs/platos/entradas-4.png" alt="Entradas 4">
+    <h4>Entradas 4</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card entradas">
+    <img src="../../imgs/platos/entradas-5.png" alt="Entradas 5">
+    <h4>Entradas 5</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+</section>
+
+<!-- 🔸 GRILL 66 -->
+<section class="categoria-productos grill-66">
+  <div class="producto-card grill-66">
+    <img src="../../imgs/platos/grill-66-1.png" alt="Grill 66 1">
+    <h4>Grill 66 1</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card grill-66">
+    <img src="../../imgs/platos/grill-66-2.png" alt="Grill 66 2">
+    <h4>Grill 66 2</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card grill-66">
+    <img src="../../imgs/platos/grill-66-3.png" alt="Grill 66 3">
+    <h4>Grill 66 3</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card grill-66">
+    <img src="../../imgs/platos/grill-66-4.png" alt="Grill 66 4">
+    <h4>Grill 66 4</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+  <div class="producto-card grill-66">
+    <img src="../../imgs/platos/grill-66-5.png" alt="Grill 66 5">
+    <h4>Grill 66 5</h4>
+    <p>$25.000</p>
+    <button>Ver</button>
+  </div>
+</section>
+
+<!-- 🔸 ... Y ASÍ SUCESIVAMENTE PARA LAS DEMÁS CATEGORÍAS ... -->
+
+        <!-- Aquí van las secciones y productos de platos como .producto-card entradas, pastas, etc. -->
+        <!-- Pega aquí tus productos según la categoría correspondiente -->
       </div>
     </main>
   </div>
