@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Platos | Ruta 66</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/combos.css">
-  <link rel="stylesheet" href="../../css/platos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos | Ruta 66</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- eliminado: <link rel="stylesheet" href="../../css/combos.css"> -->
+    <link rel="stylesheet" href="../../css/platos.css">
 </head>
 <body class="platos-page">
 
@@ -42,352 +42,1640 @@
 
       <div class="grid-productos" id="productos-container">
         <!-- 🔸 ENTRADAS -->
-<section class="categoria-productos entradas">
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" alt="Entradas 1">
-    <h4>Porky Belly</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_YnpZ281S1X_chorizo-artesanal-nuevo.avif" alt="Entradas 2">
-    <h4>Chorizo Artesanal</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_ccEmwb2x2k_picada_criolla_3_pax.avif" alt="Entradas 3">
-    <h4>Picada Criolla pax 3</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_fMqYtd0I3K_alitas-po-6-nueva.avif" alt="Entradas 4">
-    <h4>Alitas X6</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Entradas 5">
-    <h4>Alitas x12</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_tsKM8CSoux_tour_refajo.avif" alt="Entradas 5">
-    <h4>Combo Refajo Colombiana</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_mjHvSyHoul_croquetas-de-jaiba.avif" alt="Entradas 5">
-    <h4>Croquetas Jaiba</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_74gcW2L9qc_elote-nuevo.avif" alt="Entradas 5">
-    <h4>Elotes</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card entradas">
-    <img src="../../imgs/entradas/w_1200_rooqQn6hvJ_ensalada_capressa_2.avif" alt="Entradas 5">
-    <h4>Ensalada Capresa</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-</section>
+        <section class="categoria-productos entradas">
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" alt="Porky Belly">
+            <h4>Porky Belly</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-porky-belly')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_YnpZ281S1X_chorizo-artesanal-nuevo.avif" alt="Chorizo Artesanal">
+            <h4>Chorizo Artesanal</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-chorizo-artesanal')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_ccEmwb2x2k_picada_criolla_3_pax.avif" alt="Picada Criolla pax 3">
+            <h4>Picada Criolla pax 3</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-picada-criolla')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_fMqYtd0I3K_alitas-po-6-nueva.avif" alt="Alitas X6">
+            <h4>Alitas X6</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-alitas-x6')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Alitas x12">
+            <h4>Alitas x12</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-alitas-x12')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_tsKM8CSoux_tour_refajo.avif" alt="Combo Refajo Colombiana">
+            <h4>Combo Refajo Colombiana</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-combo-refajo')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_mjHvSyHoul_croquetas-de-jaiba.avif" alt="Croquetas Jaiba">
+            <h4>Croquetas Jaiba</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-croquetas-jaiba')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_74gcW2L9qc_elote-nuevo.avif" alt="Elotes">
+            <h4>Elotes</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-elotes')">Ver</button>
+          </div>
+        
+          <div class="producto-card entradas">
+            <img src="../../imgs/entradas/w_1200_rooqQn6hvJ_ensalada_capressa_2.avif" alt="Ensalada Capresa">
+            <h4>Ensalada Capresa</h4>
+            <p>$25.000</p>
+            <button onclick="abrirModal('modal-ensalada-capresa')">Ver</button>
+          </div>
+        </section>
+        
+        <!-- Modales de Entradas -->
+        <div id="modal-porky-belly" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-porky-belly')">×</span>
+            <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" alt="Porky Belly">
+            <h2>Porky Belly</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p>Cerdo crujiente con notas cítricas, acompañado de papa criolla.
+
+
+            </p>
+          </div>
+        </div>
+        
+        <div id="modal-chorizo-artesanal" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-chorizo-artesanal')">×</span>
+            <img src="../../imgs/entradas/w_1200_YnpZ281S1X_chorizo-artesanal-nuevo.avif" alt="Chorizo Artesanal">
+            <h2>Chorizo Artesanal</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción del Chorizo Artesanal --></p>
+          </div>
+        </div>
+        
+        <div id="modal-picada-criolla" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-picada-criolla')">×</span>
+            <img src="../../imgs/entradas/w_1200_ccEmwb2x2k_picada_criolla_3_pax.avif" alt="Picada Criolla pax 3">
+            <h2>Picada Criolla pax 3</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción de la Picada Criolla --></p>
+          </div>
+        </div>
+        
+        <div id="modal-alitas-x6" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-alitas-x6')">×</span>
+            <img src="../../imgs/entradas/w_1200_fMqYtd0I3K_alitas-po-6-nueva.avif" alt="Alitas X6">
+            <h2>Alitas X6</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción de las Alitas X6 --></p>
+          </div>
+        </div>
+        
+        <div id="modal-alitas-x12" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-alitas-x12')">×</span>
+            <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Alitas x12">
+            <h2>Alitas x12</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción de las Alitas x12 --></p>
+          </div>
+        </div>
+        
+        <div id="modal-combo-refajo" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-combo-refajo')">×</span>
+            <img src="../../imgs/entradas/w_1200_tsKM8CSoux_tour_refajo.avif" alt="Combo Refajo Colombiana">
+            <h2>Combo Refajo Colombiana</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción del Combo Refajo --></p>
+          </div>
+        </div>
+        
+        <div id="modal-croquetas-jaiba" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-croquetas-jaiba')">×</span>
+            <img src="../../imgs/entradas/w_1200_mjHvSyHoul_croquetas-de-jaiba.avif" alt="Croquetas Jaiba">
+            <h2>Croquetas Jaiba</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción de las Croquetas Jaiba --></p>
+          </div>
+        </div>
+        
+        <div id="modal-elotes" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-elotes')">×</span>
+            <img src="../../imgs/entradas/w_1200_74gcW2L9qc_elote-nuevo.avif" alt="Elotes">
+            <h2>Elotes</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción de los Elotes --></p>
+          </div>
+        </div>
+        
+        <div id="modal-ensalada-capresa" class="modal">
+          <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal('modal-ensalada-capresa')">×</span>
+            <img src="../../imgs/entradas/w_1200_rooqQn6hvJ_ensalada_capressa_2.avif" alt="Ensalada Capresa">
+            <h2>Ensalada Capresa</h2>
+            <p><strong>Precio:</strong> $25.000</p>
+            <p><!-- Aquí va la descripción de la Ensalada Capresa --></p>
+          </div>
+        </div>
 
 <!-- 🔸 GRILL 66 -->
 <section class="categoria-productos grill-66">
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/asadotira.png" alt="Grill 66 1">
+    <img src="../../imgs/cortes/asadotira.png" alt="Asado De Tira">
     <h4>Asado De Tira</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-asado-de-tira')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/babybeef.jpeg" alt="Grill 66 2">
-     
+    <img src="../../imgs/cortes/babybeef.jpeg" alt="Baby Beef">
     <h4>Baby Beef</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-baby-beef')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/bife de chorizo.png" alt="Grill 66 3">
+    <img src="../../imgs/cortes/bife de chorizo.png" alt="Bife De Chorizo">
     <h4>Bife De Chorizo</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-bife-de-chorizo')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/bondiolacerdo.png" alt="Grill 66 4">
+    <img src="../../imgs/cortes/bondiolacerdo.png" alt="Bondiala De Cerdo">
     <h4>Bondiala De Cerdo</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-bondiala-de-cerdo')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/churrasrocerdo.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/churrasrocerdo.png" alt="Churrasco De Cerdo">
     <h4>Churrasco De Cerdo</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-churrasco-de-cerdo')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomo cayena.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/lomo cayena.png" alt="Lomo Fino En Mantequilla De Cayena">
     <h4>Lomo Fino En Mantequilla De Cayena</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-lomo-fino-en-mantequilla-de-cayena')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomochamp.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/lomochamp.png" alt="Lomo Fino Salsa Champiñon Bacon">
     <h4>Lomo Fino Salsa Champiñon Bacon</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-lomo-fino-salsa-champinon-bacon')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomohuerto.png  " alt="Grill 66 5">
+    <img src="../../imgs/cortes/lomohuerto.png" alt="Lomo Fino Al Huerto">
     <h4>Lomo Fino Al Huerto</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-lomo-fino-al-huerto')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomojack.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/lomojack.png" alt="Lomo Fino a La JackDaniels">
     <h4>Lomo Fino a La JackDaniels</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-lomo-fino-a-la-jackdaniels')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomolangostino.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/lomolangostino.png" alt="Lomo en Salsa de Langostino">
     <h4>Lomo en Salsa de Langostino</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-lomo-en-salsa-de-langostino')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomovino.png" alt="Grill 66 5">
-    <h4>Lomo Al  Vino</h4>
+    <img src="../../imgs/cortes/lomovino.png" alt="Lomo Al Vino">
+    <h4>Lomo Al Vino</h4>
     <p>$25.000</p>
-    <button>Ver</button>
-    
+    <button onclick="abrirModal('modal-lomo-al-vino')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/newyork.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/newyork.png" alt="New York Steak">
     <h4>New York Steak</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-new-york-steak')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/pechuga.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/pechuga.png" alt="Pechuga A La Parrilla">
     <h4>Pechuga A La Parrilla</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-pechuga-a-la-parrilla')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/pechugacapresa.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/pechugacapresa.png" alt="Pechuga Capressa">
     <h4>Pechuga Capressa</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-pechuga-capressa')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/pechugachamp.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/pechugachamp.png" alt="Pechuga En Salsa Champiñon">
     <h4>Pechuga En Salsa Champiñon</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-pechuga-en-salsa-champinon')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/picaña.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/picaña.png" alt="Picanha">
     <h4>Picanha</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-picanha')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/punto de anca.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/punto de anca.png" alt="Punta De Anca">
     <h4>Punta De Anca</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-punta-de-anca')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/rackcostilla.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/rackcostilla.png" alt="Rack De Costilla">
     <h4>Rack De Costilla</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-rack-de-costilla')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/steakpollo.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/steakpollo.png" alt="Steak De Pollo">
     <h4>Steak De Pollo</h4>
     <p>$25.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-steak-de-pollo')">Ver</button>
   </div>
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/ribeye en cama rissoto.png" alt="Grill 66 5">
+    <img src="../../imgs/cortes/ribeye en cama rissoto.png" alt="Ribeye En Cama De Risotto De Queso Azul">
     <h4>Ribeye En Cama De Risotto De Queso Azul</h4>
     <p>$25.000</p>
-    <button>Ver</button>
-
+    <button onclick="abrirModal('modal-ribeye-en-cama-de-risotto-de-queso-azul')">Ver</button>
   </div>
-
 </section>
 
+<!-- Modales de Grill 66 -->
+<div id="modal-asado-de-tira" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-asado-de-tira')">×</span>
+    <img src="../../imgs/cortes/asadotira.png" alt="Asado De Tira">
+    <h2>Asado De Tira</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-baby-beef" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-baby-beef')">×</span>
+    <img src="../../imgs/cortes/babybeef.jpeg" alt="Baby Beef">
+    <h2>Baby Beef</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-bife-de-chorizo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-bife-de-chorizo')">×</span>
+    <img src="../../imgs/cortes/bife de chorizo.png" alt="Bife De Chorizo">
+    <h2>Bife De Chorizo</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-bondiala-de-cerdo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-bondiala-de-cerdo')">×</span>
+    <img src="../../imgs/cortes/bondiolacerdo.png" alt="Bondiala De Cerdo">
+    <h2>Bondiala De Cerdo</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-churrasco-de-cerdo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-churrasco-de-cerdo')">×</span>
+    <img src="../../imgs/cortes/churrasrocerdo.png" alt="Churrasco De Cerdo">
+    <h2>Churrasco De Cerdo</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-lomo-fino-en-mantequilla-de-cayena" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lomo-fino-en-mantequilla-de-cayena')">×</span>
+    <img src="../../imgs/cortes/lomo cayena.png" alt="Lomo Fino En Mantequilla De Cayena">
+    <h2>Lomo Fino En Mantequilla De Cayena</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-lomo-fino-salsa-champinon-bacon" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lomo-fino-salsa-champinon-bacon')">×</span>
+    <img src="../../imgs/cortes/lomochamp.png" alt="Lomo Fino Salsa Champiñon Bacon">
+    <h2>Lomo Fino Salsa Champiñon Bacon</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-lomo-fino-al-huerto" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lomo-fino-al-huerto')">×</span>
+    <img src="../../imgs/cortes/lomohuerto.png" alt="Lomo Fino Al Huerto">
+    <h2>Lomo Fino Al Huerto</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-lomo-fino-a-la-jackdaniels" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lomo-fino-a-la-jackdaniels')">×</span>
+    <img src="../../imgs/cortes/lomojack.png" alt="Lomo Fino a La JackDaniels">
+    <h2>Lomo Fino a La JackDaniels</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-lomo-en-salsa-de-langostino" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lomo-en-salsa-de-langostino')">×</span>
+    <img src="../../imgs/cortes/lomolangostino.png" alt="Lomo en Salsa de Langostino">
+    <h2>Lomo en Salsa de Langostino</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-lomo-al-vino" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lomo-al-vino')">×</span>
+    <img src="../../imgs/cortes/lomovino.png" alt="Lomo Al Vino">
+    <h2>Lomo Al Vino</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-new-york-steak" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-new-york-steak')">×</span>
+    <img src="../../imgs/cortes/newyork.png" alt="New York Steak">
+    <h2>New York Steak</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-pechuga-a-la-parrilla" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pechuga-a-la-parrilla')">×</span>
+    <img src="../../imgs/cortes/pechuga.png" alt="Pechuga A La Parrilla">
+    <h2>Pechuga A La Parrilla</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-pechuga-capressa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pechuga-capressa')">×</span>
+    <img src="../../imgs/cortes/pechugacapresa.png" alt="Pechuga Capressa">
+    <h2>Pechuga Capressa</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-pechuga-en-salsa-champinon" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pechuga-en-salsa-champinon')">×</span>
+    <img src="../../imgs/cortes/pechugachamp.png" alt="Pechuga En Salsa Champiñon">
+    <h2>Pechuga En Salsa Champiñon</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-picanha" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-picanha')">×</span>
+    <img src="../../imgs/cortes/picaña.png" alt="Picanha">
+    <h2>Picanha</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-punta-de-anca" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-punta-de-anca')">×</span>
+    <img src="../../imgs/cortes/punto de anca.png" alt="Punta De Anca">
+    <h2>Punta De Anca</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-rack-de-costilla" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-rack-de-costilla')">×</span>
+    <img src="../../imgs/cortes/rackcostilla.png" alt="Rack De Costilla">
+    <h2>Rack De Costilla</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-steak-de-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-steak-de-pollo')">×</span>
+    <img src="../../imgs/cortes/steakpollo.png" alt="Steak De Pollo">
+    <h2>Steak De Pollo</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<div id="modal-ribeye-en-cama-de-risotto-de-queso-azul" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-ribeye-en-cama-de-risotto-de-queso-azul')">×</span>
+    <img src="../../imgs/cortes/ribeye en cama rissoto.png" alt="Ribeye En Cama De Risotto De Queso Azul">
+    <h2>Ribeye En Cama De Risotto De Queso Azul</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p><!-- Aquí tu descripción --></p>
+  </div>
+</div>
+
+<!-- 🔸 MENÚ INFANTIL -->
+<section class="categoria-productos menu-infantil">
+  <div class="producto-card menu-infantil">
+    <img src="../../imgs/infantil/babybeef-infantil.png" alt="Baby Beef Infantil">
+    <h4>Baby Beef Infantil</h4>
+    <p>$34.000</p>
+    <button onclick="abrirModal('modal-baby-beef-infantil')">Ver</button>
+  </div>
+
+  <div class="producto-card menu-infantil">
+    <img src="../../imgs/infantil/nuggets-de-pollo.png" alt="Nuggets De Pollo">
+    <h4>Nuggets De Pollo</h4>
+    <p>$28.000</p>
+    <button onclick="abrirModal('modal-nuggets-de-pollo')">Ver</button>
+  </div>
+
+  <div class="producto-card menu-infantil">
+    <img src="../../imgs/infantil/pechuga-pollo-infantil.png" alt="Pechuga de Pollo Infantil">
+    <h4>Pechuga de Pollo Infantil</h4>
+    <p>$28.000</p>
+    <button onclick="abrirModal('modal-pechuga-pollo-infantil')">Ver</button>
+  </div>
+
+  <div class="producto-card menu-infantil">
+    <img src="../../imgs/infantil/fajitas-de-pollo.png" alt="Fajitas de Pollo">
+    <h4>Fajitas de Pollo</h4>
+    <p>$28.000</p>
+    <button onclick="abrirModal('modal-fajitas-de-pollo')">Ver</button>
+  </div>
+
+  <div class="producto-card menu-infantil">
+    <img src="../../imgs/infantil/mini-pizza.png" alt="Mini Pizza">
+    <h4>Mini Pizza</h4>
+    <p>$27.500</p>
+    <button onclick="abrirModal('modal-mini-pizza')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Menú Infantil -->
+<div id="modal-baby-beef-infantil" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-baby-beef-infantil')">×</span>
+    <img src="../../imgs/infantil/babybeef-infantil.png" alt="Baby Beef Infantil">
+    <h2>Baby Beef Infantil</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Acompañado con papas fritas y bebida.</p>
+  </div>
+</div>
+
+<div id="modal-nuggets-de-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-nuggets-de-pollo')">×</span>
+    <img src="../../imgs/infantil/nuggets-de-pollo.png" alt="Nuggets De Pollo">
+    <h2>Nuggets De Pollo</h2>
+    <p><strong>Precio:</strong> $28.000</p>
+    <p>Acompañado con papas fritas y bebida.</p>
+  </div>
+</div>
+
+<div id="modal-pechuga-pollo-infantil" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pechuga-pollo-infantil')">×</span>
+    <img src="../../imgs/infantil/pechuga-pollo-infantil.png" alt="Pechuga de Pollo Infantil">
+    <h2>Pechuga de Pollo Infantil</h2>
+    <p><strong>Precio:</strong> $28.000</p>
+    <p>Acompañado de papas fritas y bebida.</p>
+  </div>
+</div>
+
+<div id="modal-fajitas-de-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-fajitas-de-pollo')">×</span>
+    <img src="../../imgs/infantil/fajitas-de-pollo.png" alt="Fajitas de Pollo">
+    <h2>Fajitas de Pollo</h2>
+    <p><strong>Precio:</strong> $28.000</p>
+    <p>Acompañado con papas fritas y bebida.</p>
+  </div>
+</div>
+
+<div id="modal-mini-pizza" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-mini-pizza')">×</span>
+    <img src="../../imgs/infantil/mini-pizza.png" alt="Mini Pizza">
+    <h2>Mini Pizza</h2>
+    <p><strong>Precio:</strong> $27.500</p>
+    <p>Acompañado con bebida y diverticaja.</p>
+  </div>
+</div>
+
+<!-- 🔸 PASTAS -->
+<section class="categoria-productos pastas">
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/scoglio.png" alt="Pastas Scoglio">
+    <h4>Pastas Scoglio<span class="badge-nuevo">Nuevo</span></h4>
+    <p>$47.000</p>
+    <button onclick="abrirModal('modal-pastas-scoglio')">Ver</button>
+  </div>
+
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/4quesos.png" alt="Pastas 4 Quesos">
+    <h4>Pastas 4 Quesos<span class="badge-nuevo">Nuevo</span></h4>
+    <p>$38.000</p>
+    <button onclick="abrirModal('modal-pastas-4-quesos')">Ver</button>
+  </div>
+
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/bolonesa.png" alt="Pasta Boloñesa">
+    <h4>Pasta Boloñesa</h4>
+    <p>$32.000</p>
+    <button onclick="abrirModal('modal-pasta-bolonesa')">Ver</button>
+  </div>
+
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/carbonara-pollo.png" alt="Pastas Carbonara con Pollo">
+    <h4>Pastas Carbonara con Pollo</h4>
+    <p>$32.000</p>
+    <button onclick="abrirModal('modal-pastas-carbonara-pollo')">Ver</button>
+  </div>
+
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/frutos-mar.png" alt="Pastas Frutos del Mar">
+    <h4>Pastas Frutos del Mar</h4>
+    <p>$40.000</p>
+    <button onclick="abrirModal('modal-pastas-frutos-del-mar')">Ver</button>
+  </div>
+
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/al-pesto.png" alt="Pastas al Pesto">
+    <h4>Pastas al Pesto</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pastas-al-pesto')">Ver</button>
+  </div>
+
+  <div class="producto-card pastas">
+    <img src="../../imgs/pastas/tinta-calamar.png" alt="Pasta en Tinta de Calamar">
+    <h4>Pasta en Tinta de Calamar</h4>
+    <p>$56.000</p>
+    <button onclick="abrirModal('modal-pasta-tinta-calamar')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Pastas -->
+<div id="modal-pastas-scoglio" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pastas-scoglio')">×</span>
+    <img src="../../imgs/pastas/scoglio.png" alt="Pastas Scoglio">
+    <h2>Pastas Scoglio</h2>
+    <p><strong>Precio:</strong> $47.000</p>
+    <p>Pastas con mix de mariscos, colita de langosta, ajo asado, peperoncino, pomodoro, parmesano y mantequilla.</p>
+  </div>
+</div>
+
+<div id="modal-pastas-4-quesos" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pastas-4-quesos')">×</span>
+    <img src="../../imgs/pastas/4quesos.png" alt="Pastas 4 Quesos">
+    <h2>Pastas 4 Quesos</h2>
+    <p><strong>Precio:</strong> $38.000</p>
+    <p>Pastas 4 quesos, mozzarella, queso azul, parmesano y holandés, acompañada de tostadas de pan.</p>
+  </div>
+</div>
+
+<div id="modal-pasta-bolonesa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pasta-bolonesa')">×</span>
+    <img src="../../imgs/pastas/bolonesa.png" alt="Pasta Boloñesa">
+    <h2>Pasta Boloñesa</h2>
+    <p><strong>Precio:</strong> $32.000</p>
+    <p>Salsa boloñesa casera con carne, tomate y hierbas aromáticas.</p>
+  </div>
+</div>
+
+<div id="modal-pastas-carbonara-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pastas-carbonara-pollo')">×</span>
+    <img src="../../imgs/pastas/carbonara-pollo.png" alt="Pastas Carbonara con Pollo">
+    <h2>Pastas Carbonara con Pollo</h2>
+    <p><strong>Precio:</strong> $32.000</p>
+    <p>Pastas en salsa carbonara con pollo, crema, huevo y tocino.</p>
+  </div>
+</div>
+
+<div id="modal-pastas-frutos-del-mar" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pastas-frutos-del-mar')">×</span>
+    <img src="../../imgs/pastas/frutos-mar.png" alt="Pastas Frutos del Mar">
+    <h2>Pastas Frutos del Mar</h2>
+    <p><strong>Precio:</strong> $40.000</p>
+    <p>Pastas en salsa blanca con mix de mariscos, acompañada de tostadas de pan.</p>
+  </div>
+</div>
+
+<div id="modal-pastas-al-pesto" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pastas-al-pesto')">×</span>
+    <img src="../../imgs/pastas/al-pesto.png" alt="Pastas al Pesto">
+    <h2>Pastas al Pesto</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Pastas en salsa pesto, acompañada de tostadas de pan.</p>
+  </div>
+</div>
+
+<div id="modal-pasta-tinta-calamar" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pasta-tinta-calamar')">×</span>
+    <img src="../../imgs/pastas/tinta-calamar.png" alt="Pasta en Tinta de Calamar">
+    <h2>Pasta en Tinta de Calamar</h2>
+    <p><strong>Precio:</strong> $56.000</p>
+    <p>Pastas negras en salsa de tinta de calamar, con sabor intenso a mar.</p>
+  </div>
+</div>
+
+
+
+
+
+<!-- 🔸 HAMBURGUESAS -->
 <section class="categoria-productos hamburguesas">
-  
   <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_SidnBk9WCS_burger-portada.avif" alt="Hamburguesas 1">
+    <img src="../../imgs/hamburguersas/w_1200_SidnBk9WCS_burger-portada.avif" alt="Americana">
     <h4>Americana</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
+    <p>$29.000</p>
+    <button onclick="abrirModal('modal-burger-americana')">Ver</button>
   </div>
+
   <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_h9TqmYJJHI_burger-gaucha-2024.avif" alt="Hamburguesas 1">
-    <h4>Gaucha</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_JNkexvBS74_burger-aloha-2.avif" alt="Hamburguesas 1">
-    <h4>Aloha</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_oa7YtoNMXc_burger-criolla-nuevaa.avif" alt="Hamburguesas 1">
-    <h4>Criolla</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-  </div>
-  <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_qixatPpRh1_burger-misuri-nuevo.avif" alt="Hamburguesas 1">
+    <img src="../../imgs/hamburguersas/w_1200_qixatPpRh1_burger-misuri-nuevo.avif" alt="Misuri">
     <h4>Misuri</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
+    <p>$32.000</p>
+    <button onclick="abrirModal('modal-burger-misuri')">Ver</button>
   </div>
+
   <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_P9GZk79LFg_spicy-pig-nueva.avif" alt="Hamburguesas 1">
+    <img src="../../imgs/hamburguersas/w_1200_h9TqmYJJHI_burger-gaucha-2024.avif" alt="Gaucha">
+    <h4>Gaucha</h4>
+    <p>$35.000</p>
+    <button onclick="abrirModal('modal-burger-gaucha')">Ver</button>
+  </div>
+
+  <div class="producto-card hamburguesas">
+    <img src="../../imgs/hamburguersas/w_1200_JNkexvBS74_burger-aloha-2.avif" alt="Aloha">
+    <h4>Aloha</h4>
+    <p>$32.000</p>
+    <button onclick="abrirModal('modal-burger-aloha')">Ver</button>
+  </div>
+
+  <div class="producto-card hamburguesas">
+    <img src="../../imgs/hamburguersas/w_1200_oa7YtoNMXc_burger-criolla-nuevaa.avif" alt="Criolla">
+    <h4>Criolla</h4>
+    <p>$34.000</p>
+    <button onclick="abrirModal('modal-burger-criolla')">Ver</button>
+  </div>
+
+  <div class="producto-card hamburguesas">
+    <img src="../../imgs/hamburguersas/w_1200_P9GZk79LFg_spicy-pig-nueva.avif" alt="Spicy Pig">
     <h4>Spicy Pig</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
-    
+    <p>$36.000</p>
+    <button onclick="abrirModal('modal-burger-spicypig')">Ver</button>
   </div>
+
   <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_GCtslabaQO_burger-barbacoa-nueva.avif" alt="Hamburguesas 1">
+    <img src="../../imgs/hamburguersas/w_1200_GCtslabaQO_burger-barbacoa-nueva.avif" alt="Barbacoa">
     <h4>Barbacoa</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
+    <p>$39.000</p>
+    <button onclick="abrirModal('modal-burger-barbacoa')">Ver</button>
   </div>
+
   <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/w_1200_iVduyCdGGm_burger-oklahoma.avif" alt="Hamburguesas 1">
-    <h4>Oklahoma</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
+    <img src="../../imgs/hamburguersas/pollo-crunch.png" alt="Pollo Crunch">
+    <h4>Pollo Crunch</h4>
+    <p>$31.000</p>
+    <button onclick="abrirModal('modal-burger-pollo-crunch')">Ver</button>
   </div>
+
   <div class="producto-card hamburguesas">
-    <img src="../../imgs/hamburguersas/adicional.png" alt="Hamburguesas 1">
-    <h4>Adicional De Carne Angus</h4>
-    <p>$25.000</p>
-    <button>Ver</button>
+    <!-- Si no tienes imagen para "Adicional", puedes usar una placeholder o quitar el tag <img> -->
+    <img src="../../imgs/hamburguersas/adicional-angus.png" alt="Adicional de carne Angus">
+    <h4>Adicional de carne Angus</h4>
+    <p>$11.000</p>
+    <button onclick="abrirModal('modal-burger-adicional-angus')">Ver</button>
+  </div>
+
+  <div class="producto-card hamburguesas">
+    <img src="../../imgs/hamburguersas/w_1200_oklahoma.png" alt="Burger Oklahoma">
+    <h4>Burger Oklahoma <span class="badge-nuevo">Nuevo</span></h4>
+    <p>$37.000</p>
+    <button onclick="abrirModal('modal-burger-oklahoma')">Ver</button>
   </div>
 </section>
+
+<!-- Modales de Hamburguesas -->
+<div id="modal-burger-americana" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-americana')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_SidnBk9WCS_burger-portada.avif" alt="Americana">
+    <h2>Americana</h2>
+    <p><strong>Precio:</strong> $29.000</p>
+    <p>Pan artesanal, 150 g de certified angus beef, queso cheddar, tomate y cebolla al grill, cebolla dulce y tocineta.</p>
+  </div>
+</div>
+
+<div id="modal-burger-misuri" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-misuri')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_qixatPpRh1_burger-misuri-nuevo.avif" alt="Misuri">
+    <h2>Misuri</h2>
+    <p><strong>Precio:</strong> $32.000</p>
+    <p>Pan artesanal con base de suero costeño, 150 g de carne, queso costeño a la parrilla, chicharrón y pepinillos.</p>
+  </div>
+</div>
+
+<div id="modal-burger-gaucha" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-gaucha')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_h9TqmYJJHI_burger-gaucha-2024.avif" alt="Gaucha">
+    <h2>Gaucha</h2>
+    <p><strong>Precio:</strong> $35.000</p>
+    <p>Pan artesanal, 150 g de certified angus beef, queso mozzarella, chorizo, chimichurri, tomate y bacon.</p>
+  </div>
+</div>
+
+<div id="modal-burger-aloha" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-aloha')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_JNkexvBS74_burger-aloha-2.avif" alt="Aloha">
+    <h2>Aloha</h2>
+    <p><strong>Precio:</strong> $32.000</p>
+    <p>Pan artesanal, 150 g de certified angus beef, piña en reducción de BBQ, bacon, cheddar fundido, tomate y cebolla al grill.</p>
+  </div>
+</div>
+
+<div id="modal-burger-criolla" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-criolla')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_oa7YtoNMXc_burger-criolla-nuevaa.avif" alt="Criolla">
+    <h2>Criolla</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Pan artesanal, 150 g de certified angus beef, huevo, aguacate, queso costeño asado, chicharrón, lechuga romana y tomate.</p>
+  </div>
+</div>
+
+<div id="modal-burger-spicypig" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-spicypig')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_P9GZk79LFg_spicy-pig-nueva.avif" alt="Spicy Pig">
+    <h2>Spicy Pig</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Pan artesanal, 150 g de certified angus beef y bondiola de cerdo en reducción de mermelada de chile, con queso derretido.</p>
+  </div>
+</div>
+
+<div id="modal-burger-barbacoa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-barbacoa')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_GCtslabaQO_burger-barbacoa-nueva.avif" alt="Barbacoa">
+    <h2>Barbacoa</h2>
+    <p><strong>Precio:</strong> $39.000</p>
+    <p>Fundido de queso y costillas BBQ sobre pan artesanal, 150 g de certified angus beef, cheddar fundido y tomate.</p>
+  </div>
+</div>
+
+<div id="modal-burger-pollo-crunch" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-pollo-crunch')">×</span>
+    <img src="../../imgs/hamburguersas/pollo-crunch.png" alt="Pollo Crunch">
+    <h2>Pollo Crunch</h2>
+    <p><strong>Precio:</strong> $31.000</p>
+    <p>Pan artesanal, 150 g de suprema de pollo empanizada, queso cheddar fundido, tomate y cebolla al grill.</p>
+  </div>
+</div>
+
+<div id="modal-burger-adicional-angus" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-adicional-angus')">×</span>
+    <img src="../../imgs/hamburguersas/adicional-angus.png" alt="Adicional de carne Angus">
+    <h2>Adicional de carne Angus</h2>
+    <p><strong>Precio:</strong> $11.000</p>
+    <p>Porción extra de 100 g de carne certified angus beef.</p>
+  </div>
+</div>
+
+<div id="modal-burger-oklahoma" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-burger-oklahoma')">×</span>
+    <img src="../../imgs/hamburguersas/w_1200_oklahoma.png" alt="Burger Oklahoma">
+    <h2>Burger Oklahoma <span class="badge-nuevo">Nuevo</span></h2>
+    <p><strong>Precio:</strong> $37.000</p>
+    <p>Pan artesanal, 150 g de certified angus beef bañado en salsa de queso azul con miel de abejas y tocineta caramelizada.</p>
+  </div>
+</div>
+
+<!-- 🔸 RUTA DEL MAR (con modales) -->
 <section class="categoria-productos ruta-del-mar">
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_4LfusrcML1_salmon_en_ghee_de_coco_2.avif" alt="Salmon En Ghee De Coco">
     <h4>Salmon En Ghee De Coco</h4>
     <p>$32.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-salmon-ghee')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_6BPHtkJPLg_mar-y-tierra.avif" alt="Mar y Tierra">
     <h4>Mar y Tierra</h4>
     <p>$30.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-mar-y-tierra')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_AYRu8B7ySR_encocado_de_langosta_2.avif" alt="Encocado de Langosta">
     <h4>Encocado de Langosta</h4>
     <p>$38.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-encocado-langosta')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_cPuwWACfyQ_causa-de-langostinos.avif" alt="Causa de Langostino">
     <h4>Causa de Langostino</h4>
     <p>$34.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-causa-langostino')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_eAkGc5mLCe_langostinos_en_cama_de_maduro.avif" alt="Langostino en Cama de Maduro">
     <h4>Langostino en Cama de Maduro</h4>
     <p>$42.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-langostino-maduro')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_Iz7PNWLYOv_risotto_marinero.avif" alt="Risotto Marinero">
     <h4>Risotto Marinero</h4>
     <p>$36.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-risotto-marinero')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_oKJxUglk9J_pulpo_confitado_1.avif" alt="Pulpo Confitado">
     <h4>Pulpo Confitado</h4>
     <p>$36.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-pulpo-confitado')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_PYAAHxIuZP_pulpo_2.avif" alt="Pulpo al GRILL">
     <h4>Pulpo al GRILL</h4>
     <p>$36.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-pulpo-grill')">Ver</button>
   </div>
 
   <div class="producto-card ruta-del-mar">
     <img src="../../imgs/ruta del mar/w_1200_tnFCVfZTQr_salmon-al-ajillo-2024.avif" alt="Salmon a la Parilla">
     <h4>Salmon a la Parilla</h4>
     <p>$36.000</p>
-    <button>Ver</button>
+    <button onclick="abrirModal('modal-salmon-parrilla')">Ver</button>
   </div>
+
+  <div class="producto-card ruta-del-mar">
+    <img src="../../imgs/ruta del mar/w_1200_cPuwWACfyQ_salmon-al-ajillo-2024.avif" alt="Salmon al ajillo">
+    <h4>Salmon al ajillo</h4>
+    <p>$54.000</p>
+    <button onclick="abrirModal('modal-salmon-al-ajillo')">Ver</button>
+  </div>
+
 </section>
+
+<!-- Modales de Ruta del Mar -->
+<div id="modal-salmon-ghee" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-salmon-ghee')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_4LfusrcML1_salmon_en_ghee_de_coco_2.avif" alt="Salmon En Ghee De Coco">
+    <h2>Salmon En Ghee De Coco</h2>
+    <p><strong>Precio:</strong> $32.000</p>
+    <p>Salmon en ghee de coco, puré de papa, tomate cherry confitado.</p>
+  </div>
+</div>
+
+<div id="modal-mar-y-tierra" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-mar-y-tierra')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_6BPHtkJPLg_mar-y-tierra.avif" alt="Mar y Tierra">
+    <h2>Mar y Tierra</h2>
+    <p><strong>Precio:</strong> $30.000</p>
+    <p>Lomo fino en salsa de pimienta, langosta a la parrilla en salsa de queso, puré de papa.</p>
+  </div>
+</div>
+
+<div id="modal-encocado-langosta" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-encocado-langosta')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_AYRu8B7ySR_encocado_de_langosta_2.avif" alt="Encocado de Langosta">
+    <h2>Encocado de Langosta</h2>
+    <p><strong>Precio:</strong> $38.000</p>
+    <p>Encocado de langosta y langostino en leche de coco y frutos del mar, canasta de maduro y suero costeño.</p>
+  </div>
+</div>
+
+<div id="modal-causa-langostino" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-causa-langostino')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_cPuwWACfyQ_causa-de-langostinos.avif" alt="Causa de Langostino">
+    <h2>Causa de Langostino</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Base de tres purés (papa, arracacha y plátano amarillo), langostinos en ghee de coco, mejillones, aceite de eneldo y queso costeño.</p>
+  </div>
+</div>
+
+<div id="modal-langostino-maduro" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-langostino-maduro')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_eAkGc5mLCe_langostinos_en_cama_de_maduro.avif" alt="Langostino en Cama de Maduro">
+    <h2>Langostino en Cama de Maduro</h2>
+    <p><strong>Precio:</strong> $42.000</p>
+    <p>Langostinos apanados con puré de maduro.</p>
+  </div>
+</div>
+
+<div id="modal-risotto-marinero" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-risotto-marinero')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_Iz7PNWLYOv_risotto_marinero.avif" alt="Risotto Marinero">
+    <h2>Risotto Marinero</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Risotto cremoso con frutos del mar frescos.</p>
+  </div>
+</div>
+
+<div id="modal-pulpo-confitado" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pulpo-confitado')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_oKJxUglk9J_pulpo_confitado_1.avif" alt="Pulpo Confitado">
+    <h2>Pulpo Confitado</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Pulpo confitado, cremoso de arracacha, pesto y mix de verdes.</p>
+  </div>
+</div>
+
+<div id="modal-pulpo-grill" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pulpo-grill')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_PYAAHxIuZP_pulpo_2.avif" alt="Pulpo al GRILL">
+    <h2>Pulpo al GRILL</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Tentáculo de pulpo a la parrilla, puré de papa al pesto, chimichurri de piña y mayonesa de remolacha.</p>
+  </div>
+</div>
+
+<div id="modal-salmon-parrilla" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-salmon-parrilla')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_tnFCVfZTQr_salmon-al-ajillo-2024.avif" alt="Salmon a la Parilla">
+    <h2>Salmon a la Parilla</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Puré de papa, tiras de zanahoria y tomate cherry confitados.</p>
+  </div>
+</div>
+<div id="modal-salmon-al-ajillo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-salmon-al-ajillo')">×</span>
+    <img src="../../imgs/ruta del mar/w_1200_cPuwWACfyQ_salmon-al-ajillo-2024.avif" alt="Salmon al ajillo">
+    <h2>Salmon al ajillo</h2>
+    <p><strong>Precio:</strong> $54.000</p>
+    <p>Puré de papa, tiras de zanahoria y tomate cherry confitados.</p>
+  </div>
+</div>
+
+
+<!-- 🔸 SÁNDWICHES -->
 <section class="categoria-productos sandwiches">
   <div class="producto-card sandwiches">
-    <img src="../../imgs/sanwi/w_1200_gnAJsUeRW0_sandiwch-rosbif.avif" alt="Salmon En Ghee De Coco">
-    <h4>Rosbif </h4>
-    <p>$32.000</p>
-    <button>Ver</button>
+    <img src="../../imgs/sandwiches/pollo-champinon.png" alt="Pollo y Champiñón">
+    <h4>Pollo y Champiñón</h4>
+    <p>$26.000</p>
+    <button onclick="abrirModal('modal-sandwich-pollo-champinon')">Ver</button>
   </div>
+
   <div class="producto-card sandwiches">
-    <img src="../../imgs/sanwi/w_1200_FTRNtNMjYJ_wilbur.avif" alt="Salmon En Ghee De Coco">
+    <img src="../../imgs/sandwiches/wilbur.png" alt="Wilbur">
     <h4>Wilbur</h4>
-    <p>$32.000</p>
-    <button>Ver</button>
+    <p>$28.000</p>
+    <button onclick="abrirModal('modal-sandwich-wilbur')">Ver</button>
   </div>
+
   <div class="producto-card sandwiches">
-    <img src="../../imgs/sanwi/w_1200_T3HXtzy0yj_pollo_champinon_2.avif" alt="Salmon En Ghee De Coco">
-    <h4>Pollo Champiñon </h4>
-    <p>$32.000</p>
-    <button>Ver</button>
+    <img src="../../imgs/sandwiches/rosbif.png" alt="Sándwich Rosbif">
+    <h4>Sándwich Rosbif <span class="badge-nuevo">Nuevo</span></h4>
+    <p>$34.000</p>
+    <button onclick="abrirModal('modal-sandwich-rosbif')">Ver</button>
   </div>
-  </section>
-  <section class="categoria-productos lasagna">
-    <div class="producto-card lasagna">
-      <img src="../../imgs/lasagna/w_1200_aV9x25W4iJ_lasanaBoloñesa_7.avif" alt="Salmon En Ghee De Coco">
-      <h4>lasagna boloñesa</h4>
-      <p>$32.000</p>
-      <button>Ver</button>
-    </div>
-    <div class="producto-card lasagna">
-      <img src="../../imgs/lasagna/w_1200_5oS2zv1pxk_lasana_2.avif" alt="Salmon En Ghee De Coco">
-      <h4>lasagna mixta</h4>
-      <p>$32.000</p>
-      <button>Ver</button>
-    </div>
-    <div class="producto-card lasagna">
-      <img src="../../imgs/lasagna/w_1200_p5ieyfofC5_lasana_8.avif" alt="Salmon En Ghee De Coco">
-      <h4>lasagna de Pollo</h4>
-      <p>$32.000</p>
-      <button>Ver</button>
-    </div>
+</section>
+
+<!-- Modales de Sándwiches -->
+<div id="modal-sandwich-pollo-champinon" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-sandwich-pollo-champinon')">×</span>
+    <img src="../../imgs/sandwiches/pollo-champinon.png" alt="Pollo y Champiñón">
+    <h2>Pollo y Champiñón</h2>
+    <p><strong>Precio:</strong> $26.000</p>
+    <p>Pan de especias bañado en salsa blanca con champiñón, pollo deshilachado y mayonesa de la casa.</p>
+  </div>
+</div>
+
+<div id="modal-sandwich-wilbur" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-sandwich-wilbur')">×</span>
+    <img src="../../imgs/sandwiches/wilbur.png" alt="Wilbur">
+    <h2>Wilbur</h2>
+    <p><strong>Precio:</strong> $28.000</p>
+    <p>Pan de especias con bondiola de cerdo deshilachada en reducción de BBQ y mermelada de chile, rematado con repollo crocante.</p>
+  </div>
+</div>
+
+<div id="modal-sandwich-rosbif" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-sandwich-rosbif')">×</span>
+    <img src="../../imgs/sandwiches/rosbif.png" alt="Sándwich Rosbif">
+    <h2>Sándwich Rosbif</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Pan de finas hierbas con 150 g de rosbif, repollos encurtidos, salsa de queso azul con miel y tocineta caramelizada.</p>
+  </div>
+</div>
+
+<!-- 🔸 LASAGNA -->
+<section class="categoria-productos lasagna">
+  <div class="producto-card lasagna">
+    <img src="../../imgs/lasagna/w_1200_aV9x25W4iJ_lasanaBoloñesa_7.avif" alt="Lasagna Boloñesa">
+    <h4>Lasagna Boloñesa</h4>
+    <p>$31.000</p>
+    <button onclick="abrirModal('modal-lasagna-bolonesa')">Ver</button>
+  </div>
+
+  <div class="producto-card lasagna">
+    <img src="../../imgs/lasagna/w_1200_5oS2zv1pxk_lasana_2.avif" alt="Lasagna Mixta">
+    <h4>Lasagna Mixta</h4>
+    <p>$34.000</p>
+    <button onclick="abrirModal('modal-lasagna-mixta')">Ver</button>
+  </div>
+
+  <div class="producto-card lasagna">
+    <img src="../../imgs/lasagna/w_1200_p5ieyfofC5_lasana_8.avif" alt="Lasagna de Pollo">
+    <h4>Lasagna de Pollo</h4>
+    <p>$31.000</p>
+    <button onclick="abrirModal('modal-lasagna-pollo')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Lasagna -->
+
+<div id="modal-lasagna-bolonesa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lasagna-bolonesa')">×</span>
+    <img src="../../imgs/lasagna/w_1200_aV9x25W4iJ_lasanaBoloñesa_7.avif" alt="Lasagna Boloñesa">
+    <h2>Lasagna Boloñesa</h2>
+    <p><strong>Precio:</strong> $31.000</p>
+    <p>Lasaña en salsa boloñesa, acompañada de tostadas de pan y queso mozzarella.</p>
+  </div>
+</div>
+
+<div id="modal-lasagna-mixta" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lasagna-mixta')">×</span>
+    <img src="../../imgs/lasagna/w_1200_5oS2zv1pxk_lasana_2.avif" alt="Lasagna Mixta">
+    <h2>Lasagna Mixta</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Lasaña en salsa blanca y pollo, salsa boloñesa, acompañada de tostadas de pan y queso mozzarella.</p>
+  </div>
+</div>
+
+<div id="modal-lasagna-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-lasagna-pollo')">×</span>
+    <img src="../../imgs/lasagna/w_1200_p5ieyfofC5_lasana_8.avif" alt="Lasagna de Pollo">
+    <h2>Lasagna de Pollo</h2>
+    <p><strong>Precio:</strong> $31.000</p>
+    <p>Lasaña en salsa blanca y pollo, acompañada de tostadas de pan y queso mozzarella.</p>
+  </div>
+</div>
+
+<!-- 🔸 ARROCES -->
+<section class="categoria-productos arroces">
+  <div class="producto-card arroces">
+    <img src="../../imgs/arroces/w_1200_arroz-con-pollo.avif" alt="Arroz con Pollo">
+    <h4>Arroz con Pollo</h4>
+    <p>$31.000</p>
+    <button onclick="abrirModal('modal-arroz-con-pollo')">Ver</button>
+  </div>
+  <div class="producto-card arroces">
+    <img src="../../imgs/arroces/w_1200_arroz-trifasico.avif" alt="Arroz Trifásico">
+    <h4>Arroz Trifásico</h4>
+    <p>$35.000</p>
+    <button onclick="abrirModal('modal-arroz-trifasico')">Ver</button>
+  </div>
+  <div class="producto-card arroces">
+    <img src="../../imgs/arroces/w_1200_arroz-frutos-del-mar.avif" alt="Arroz Frutos del Mar">
+    <h4>Arroz Frutos del Mar</h4>
+    <p>$38.000</p>
+    <button onclick="abrirModal('modal-arroz-frutos-del-mar')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Arroces -->
+<div id="modal-arroz-con-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-arroz-con-pollo')">×</span>
+    <img src="../../imgs/arroces/w_1200_arroz-con-pollo.avif" alt="Arroz con Pollo">
+    <h2>Arroz con Pollo</h2>
+    <p><strong>Precio:</strong> $31.000</p>
+    <p>Vegetales salteados, 200 gr de pechuga, 150 gr de arroz, acompañado con papa francesa.</p>
+  </div>
+</div>
+
+<div id="modal-arroz-trifasico" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-arroz-trifasico')">×</span>
+    <img src="../../imgs/arroces/w_1200_arroz-trifasico.avif" alt="Arroz Trifásico">
+    <h2>Arroz Trifásico</h2>
+    <p><strong>Precio:</strong> $35.000</p>
+    <p>Cerdo, pollo, res, vegetales salteados, salsa teriyaki, acompañado con papa francesa.</p>
+  </div>
+</div>
+
+<div id="modal-arroz-frutos-del-mar" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-arroz-frutos-del-mar')">×</span>
+    <img src="../../imgs/arroces/w_1200_arroz-frutos-del-mar.avif" alt="Arroz Frutos del Mar">
+    <h2>Arroz Frutos del Mar</h2>
+    <p><strong>Precio:</strong> $38.000</p>
+    <p>Mix de mariscos salteados con bisque, vegetales, acompañado con papa francesa.</p>
+  </div>
+</div>
+
+<!-- 🔸 ENSALADAS/BOWL -->
+<section class="categoria-productos ensaladas">
+  <div class="producto-card ensaladas">
+    <img src="../../imgs/ensaladas/tropico.avif" alt="Tropico">
+    <h4>Tropico</h4>
+    <p>$30.000</p>
+    <button onclick="abrirModal('modal-tropico')">Ver</button>
+  </div>
+  <div class="producto-card ensaladas">
+    <img src="../../imgs/ensaladas/rutero.avif" alt="Rutero">
+    <h4>Rutero</h4>
+    <p>$28.000</p>
+    <button onclick="abrirModal('modal-rutero')">Ver</button>
+  </div>
+  <div class="producto-card ensaladas">
+    <img src="../../imgs/ensaladas/spring.avif" alt="Spring">
+    <h4>Spring</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-spring')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Ensaladas/Bowl -->
+<div id="modal-tropico" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-tropico')">×</span>
+    <img src="../../imgs/ensaladas/tropico.avif" alt="Tropico">
+    <h2>Tropico</h2>
+    <p><strong>Precio:</strong> $30.000</p>
+    <p>Mix de lechugas, lonjas de salmón, cebollas encurtidas, repollos encurtidos, maíz, queso asado y aguacate.</p>
+  </div>
+</div>
+
+<div id="modal-rutero" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-rutero')">×</span>
+    <img src="../../imgs/ensaladas/rutero.avif" alt="Rutero">
+    <h2>Rutero</h2>
+    <p><strong>Precio:</strong> $28.000</p>
+    <p>Mix de lechugas, pechuga de pollo, cebollas encurtidas, repollos encurtidos, maíz, queso asado y aguacate.</p>
+  </div>
+</div>
+
+<div id="modal-spring" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-spring')">×</span>
+    <img src="../../imgs/ensaladas/spring.avif" alt="Spring">
+    <h2>Spring</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Mix de lechugas, cebollas encurtidas, repollos encurtidos, maíz, queso asado, aguacate, zanahoria y pepinos.</p>
+  </div>
+</div>
+
+<!-- 🔸 PIZZAS TRADICIONALES -->
+<section class="categoria-productos pizzas-tradicionales">
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-bocadillo.jpg" alt="Pizza de Bocadillo">
+    <h4>Pizza de Bocadillo</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-bocadillo')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-2sabores.jpg" alt="Pizza 2 Sabores">
+    <h4>Pizza 2 Sabores</h4>
+    <p>$30.000</p>
+    <button onclick="abrirModal('modal-pizza-2sabores')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-salami.jpg" alt="Pizza de Salami">
+    <h4>Pizza de Salami</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-salami')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-bolonesa.jpg" alt="Pizza Boloñesa">
+    <h4>Pizza Boloñesa</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-bolonesa')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-champinon.jpg" alt="Pizza de Champiñón">
+    <h4>Pizza de Champiñón</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-champinon')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-pollo.jpg" alt="Pizza de Pollo">
+    <h4>Pizza de Pollo</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-pollo')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-chorizo-espanol.jpg" alt="Pizza Chorizo Español">
+    <h4>Pizza Chorizo Español</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-chorizo-espanol')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-tocineta.jpg" alt="Pizza de Tocineta">
+    <h4>Pizza de Tocineta</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-tocineta')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-pepperoni.jpg" alt="Pizza de Peperoni">
+    <h4>Pizza de Peperoni</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-pepperoni')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-tradicionales">
+    <img src="../../imgs/pizzas-tradicionales/pizza-hawaiana.jpg" alt="Pizza Hawaiana">
+    <h4>Pizza Hawaiana</h4>
+    <p>$25.000</p>
+    <button onclick="abrirModal('modal-pizza-hawaiana')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Pizzas Tradicionales -->
+<div id="modal-pizza-bocadillo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-bocadillo')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-bocadillo.jpg" alt="Pizza de Bocadillo">
+    <h2>Pizza de Bocadillo</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Delgada base de masa crocante con salsa de tomate y queso mozzarella fundido.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-2sabores" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-2sabores')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-2sabores.jpg" alt="Pizza 2 Sabores">
+    <h2>Pizza 2 Sabores</h2>
+    <p><strong>Precio:</strong> $30.000</p>
+    <p>Elige dos ingredientes: jamón, pollo, hawaiana, salami, chorizo español, pepperoni o tocineta.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-salami" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-salami')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-salami.jpg" alt="Pizza de Salami">
+    <h2>Pizza de Salami</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Clásica con abundantes láminas de salami y queso mozzarella.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-bolonesa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-bolonesa')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-bolonesa.jpg" alt="Pizza Boloñesa">
+    <h2>Pizza Boloñesa</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Salsa boloñesa casera, queso parmesano y toque de albahaca.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-champinon" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-champinon')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-champinon.jpg" alt="Pizza de Champiñón">
+    <h2>Pizza de Champiñón</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Champiñones frescos salteados y queso gratinado.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-pollo')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-pollo.jpg" alt="Pizza de Pollo">
+    <h2>Pizza de Pollo</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Pechuga de pollo marinada, salsa BBQ y queso cheddar.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-chorizo-espanol" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-chorizo-espanol')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-chorizo-espanol.jpg" alt="Pizza Chorizo Español">
+    <h2>Pizza Chorizo Español</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Chorizo español picante y queso manchego.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-tocineta" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-tocineta')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-tocineta.jpg" alt="Pizza de Tocineta">
+    <h2>Pizza de Tocineta</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Crujiente tocineta ahumada y queso mozzarella.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-pepperoni" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-pepperoni')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-pepperoni.jpg" alt="Pizza de Peperoni">
+    <h2>Pizza de Peperoni</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Clásica de pepperoni con extra queso fundido.</p>
+  </div>
+</div>
+
+<div id="modal-pizza-hawaiana" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-pizza-hawaiana')">×</span>
+    <img src="../../imgs/pizzas-tradicionales/pizza-hawaiana.jpg" alt="Pizza Hawaiana">
+    <h2>Pizza Hawaiana</h2>
+    <p><strong>Precio:</strong> $25.000</p>
+    <p>Piña jugosa y jamón dulce sobre queso mozzarella.</p>
+  </div>
+</div>
+
+<!-- 🔸 PIZZAS GOURMET -->
+<section class="categoria-productos pizzas-gourmet">
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/carnivora.png" alt="Carnivora">
+    <h4>Carnivora</h4>
+    <p>$34.000</p>
+    <button onclick="abrirModal('modal-carnivora')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/vegetariana.png" alt="Vegetariana">
+    <h4>Vegetariana</h4>
+    <p>$32.000</p>
+    <button onclick="abrirModal('modal-vegetariana')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/marinera.png" alt="Marinera">
+    <h4>Marinera</h4>
+    <p>$37.000</p>
+    <button onclick="abrirModal('modal-marinera')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/holandesa.png" alt="Holandesa">
+    <h4>Holandesa</h4>
+    <p>$35.000</p>
+    <button onclick="abrirModal('modal-holandesa')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/margarita.png" alt="Margarita">
+    <h4>Margarita</h4>
+    <p>$31.000</p>
+    <button onclick="abrirModal('modal-margarita')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/mexicana.png" alt="Mexicana">
+    <h4>Mexicana</h4>
+    <p>$33.000</p>
+    <button onclick="abrirModal('modal-mexicana')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/ruta66.png" alt="Ruta 66">
+    <h4>Ruta 66</h4>
+    <p>$33.000</p>
+    <button onclick="abrirModal('modal-ruta-66')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/marylin-monroe.png" alt="Marylin Monroe">
+    <h4>Marylin Monroe</h4>
+    <p>$36.000</p>
+    <button onclick="abrirModal('modal-marylin-monroe')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/springfield.png" alt="Springfield">
+    <h4>Springfield</h4>
+    <p>$34.000</p>
+    <button onclick="abrirModal('modal-springfield')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/borde-de-queso.png" alt="Borde de queso">
+    <h4>Borde de queso</h4>
+    <p>$10.000</p>
+    <button onclick="abrirModal('modal-borde-de-queso')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/germana.png" alt="Germana">
+    <h4>Germana</h4>
+    <p>$36.000</p>
+    <button onclick="abrirModal('modal-germana')">Ver</button>
+  </div>
+  <div class="producto-card pizzas-gourmet">
+    <img src="../../imgs/pizzas-gourmet/capressa.png" alt="Capressa">
+    <h4>Capressa</h4>
+    <p>$33.000</p>
+    <button onclick="abrirModal('modal-capressa')">Ver</button>
+  </div>
+</section>
+
+<!-- Modales de Pizzas Gourmet -->
+<div id="modal-carnivora" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-carnivora')">×</span>
+    <img src="../../imgs/pizzas-gourmet/carnivora.png" alt="Carnivora">
+    <h2>Carnivora</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Pollo, pepperoni, chorizo, tocineta y queso.</p>
+  </div>
+</div>
+
+<div id="modal-vegetariana" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-vegetariana')">×</span>
+    <img src="../../imgs/pizzas-gourmet/vegetariana.png" alt="Vegetariana">
+    <h2>Vegetariana</h2>
+    <p><strong>Precio:</strong> $32.000</p>
+    <p>Salsa napolitana, champiñón, brócoli, espinaca, aceitunas moradas, pimentón y pesto.</p>
+  </div>
+</div>
+
+<div id="modal-marinera" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-marinera')">×</span>
+    <img src="../../imgs/pizzas-gourmet/marinera.png" alt="Marinera">
+    <h2>Marinera</h2>
+    <p><strong>Precio:</strong> $37.000</p>
+    <p>Camarón, anillos de calamar, cebolla grille y queso.</p>
+  </div>
+</div>
+
+<div id="modal-holandesa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-holandesa')">×</span>
+    <img src="../../imgs/pizzas-gourmet/holandesa.png" alt="Holandesa">
+    <h2>Holandesa</h2>
+    <p><strong>Precio:</strong> $35.000</p>
+    <p>Pollo, piña, queso holandés y queso parmesano.</p>
+  </div>
+</div>
+
+<div id="modal-margarita" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-margarita')">×</span>
+    <img src="../../imgs/pizzas-gourmet/margarita.png" alt="Margarita">
+    <h2>Margarita</h2>
+    <p><strong>Precio:</strong> $31.000</p>
+    <p>Tomate cherry, albahaca, salsa pesto y queso.</p>
+  </div>
+</div>
+
+<div id="modal-mexicana" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-mexicana')">×</span>
+    <img src="../../imgs/pizzas-gourmet/mexicana.png" alt="Mexicana">
+    <h2>Mexicana</h2>
+    <p><strong>Precio:</strong> $33.000</p>
+    <p>Fríjol refrito, salsa boloñesa, carne molida, maíz, tomate picado, nachos, jalapeños y queso.</p>
+  </div>
+</div>
+
+<div id="modal-ruta-66" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-ruta-66')">×</span>
+    <img src="../../imgs/pizzas-gourmet/ruta66.png" alt="Ruta 66">
+    <h2>Ruta 66</h2>
+    <p><strong>Precio:</strong> $33.000</p>
+    <p>Pollo, tocineta, salami, BBQ y queso.</p>
+  </div>
+</div>
+
+<div id="modal-marylin-monroe" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-marylin-monroe')">×</span>
+    <img src="../../imgs/pizzas-gourmet/marylin-monroe.png" alt="Marylin Monroe">
+    <h2>Marylin Monroe</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Pepperoni, salami, jamón, pollo y champiñón.</p>
+  </div>
+</div>
+
+<div id="modal-springfield" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-springfield')">×</span>
+    <img src="../../imgs/pizzas-gourmet/springfield.png" alt="Springfield">
+    <h2>Springfield</h2>
+    <p><strong>Precio:</strong> $34.000</p>
+    <p>Pollo, tocineta, rúgula, maíz y queso.</p>
+  </div>
+</div>
+
+<div id="modal-borde-de-queso" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-borde-de-queso')">×</span>
+    <img src="../../imgs/pizzas-gourmet/borde-de-queso.png" alt="Borde de queso">
+    <h2>Borde de queso</h2>
+    <p><strong>Precio:</strong> $10.000</p>
+    <p>Borde relleno de queso.</p>
+  </div>
+</div>
+
+<div id="modal-germana" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-germana')">×</span>
+    <img src="../../imgs/pizzas-gourmet/germana.png" alt="Germana">
+    <h2>Germana</h2>
+    <p><strong>Precio:</strong> $36.000</p>
+    <p>Carne de hamburguesa a la parrilla, cebolla caramelizada, chorizo, tocineta, queso holandés y parmesano.</p>
+  </div>
+</div>
+
+<div id="modal-capressa" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-capressa')">×</span>
+    <img src="../../imgs/pizzas-gourmet/capressa.png" alt="Capressa">
+    <h2>Capressa</h2>
+    <p><strong>Precio:</strong> $33.000</p>
+    <p>Tomate cherry, queso de búfala, salsa pesto, albahaca fresca y reducción de balsámico.</p>
+  </div>
+</div>
+
+
+
+
+
+
 
 
   <script src="../../js/licores.js"></script>

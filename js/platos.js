@@ -56,4 +56,12 @@ function filtrar(categoria) {
       }
     }
   });
-  
+
+// Cerrar modal al hacer click fuera de .modal-content
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});

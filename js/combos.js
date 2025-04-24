@@ -1,3 +1,4 @@
+// Funciones para abrir y cerrar modales por ID
 function abrirModal(id) {
   const modal = document.getElementById(id);
   if (modal) modal.style.display = 'block';
@@ -8,7 +9,7 @@ function cerrarModal(id) {
   if (modal) modal.style.display = 'none';
 }
 
-// Cerrar con ESC
+// Cerrar con la tecla ESC
 window.addEventListener('keydown', function(e) {
   if (e.key === "Escape") {
     const abierto = document.querySelector('.modal[style*="display: block"]');
@@ -16,7 +17,7 @@ window.addEventListener('keydown', function(e) {
   }
 });
 
-// Cerrar al hacer clic fuera del contenido
+// Cerrar al hacer clic fuera del contenido del modal
 document.querySelectorAll('.modal').forEach(modal => {
   modal.addEventListener('click', function(e) {
     if (e.target === modal) {
@@ -24,3 +25,4 @@ document.querySelectorAll('.modal').forEach(modal => {
     }
   });
 });
+

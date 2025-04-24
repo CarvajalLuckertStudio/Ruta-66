@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebidas | Ruta 66</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/combos.css">
+  <link rel="stylesheet" href="../../css/licores.css">
+</head>
+<body class="licores-page">
+
+  <header class="menu-header">
+    <a href="../menu/menut.html" class="back-btn">←</a>
+    <span class="logo-text">Bebidas</span>
+  </header>
+
+  <div class="contenedor-licores">
+    <aside class="filtro-categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li class="activo" onclick="filtrar('todos')">Todos</li>
+        <li onclick="filtrar('sodas-organicas')">Sodas Orgánicas</li>
+        <li onclick="filtrar('cocteles')">Cócteles</li>
+        <li onclick="filtrar('bebidas')">Bebidas</li>
+        <li onclick="filtrar('sodas-micheladas')">Sodas mmicheladas</li>
+      </ul>
+    </aside>
+
+    <main class="contenedor-productos">
+      <h2 class="titulo-categoria" id="categoria-titulo">Todos</h2>
+      <div class="grid-productos" id="productos-container">
+
+        <!-- 🔸 SODAS ORGÁNICAS -->
+        <section class="categoria-productos sodas-organicas">
+          <div class="producto-card sodas-organicas">
+            <img src="../../imgs/sodas-organicas/soda-colageno.png" alt="Soda colágeno">
+            <h4>Soda colágeno</h4>
+            <p>$15.000</p>
+            <button>Ver</button>
+          </div>
+          <div class="producto-card sodas-organicas">
+            <img src="../../imgs/sodas-organicas/soda-chicha-morada.png" alt="Soda Chicha Morada">
+            <h4>Soda Chicha Morada</h4>
+            <p>$15.000</p>
+            <button>Ver</button>
+          </div>
+          <div class="producto-card sodas-organicas">
+            <img src="../../imgs/sodas-organicas/soda-energy.png" alt="Soda Energy">
+            <h4>Soda Energy</h4>
+            <p>$15.000</p>
+            <button>Ver</button>
+          </div>
+          <div class="producto-card sodas-organicas">
+            <img src="../../imgs/sodas-organicas/soda-granadilla.png" alt="Soda Granadilla">
+            <h4>Soda Granadilla</h4>
+            <p>$15.000</p>
+            <button>Ver</button>
+          </div>
+          <div class="producto-card sodas-organicas">
+            <img src="../../imgs/sodas-organicas/soda-acai-berry.png" alt="Soda Acai Berry">
+            <h4>Soda Acai Berry</h4>
+            <p>$15.000</p>
+            <button>Ver</button>
+          </div>
+        </section>
+
+        <!-- 🔸 CÓCTELES -->
+        <section class="categoria-productos cocteles">
+            <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/mojito-de-uvas.png" alt="Mojito De Uvas">
+                <h4>Mojito De Uvas</h4>
+                <p>$26.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/jarra-sangria-vino-tinto.png" alt="Jarra de Sangría Vino Tinto">
+                <h4>Jarra de Sangría Vino Tinto</h4>
+                <p>$85.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/mojito-luna-azul.png" alt="Mojito Luna Azul">
+                <h4>Mojito Luna Azul</h4>
+                <p>$26.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/copa-vino-blanco.png" alt="Copa de Vino Blanco">
+                <h4>Copa de Vino Blanco</h4>
+                <p>$27.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/margarita-clasica.png" alt="Margarita clásica">
+                <h4>Margarita clásica</h4>
+                <p>$30.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/jarra-sangria-vino-blanco.png" alt="Jarra de Sangría de Vino Blanco">
+                <h4>Jarra de Sangría de Vino Blanco</h4>
+                <p>$85.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/copa-vino-tinto-casa.png" alt="Copa de Vino Tinto de la Casa">
+                <h4>Copa de Vino Tinto de la Casa</h4>
+                <p>$27.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/margarita-maracuya.png" alt="Margarita de Maracuyá">
+                <h4>Margarita de Maracuyá</h4>
+                <p>$30.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/jarra-sangria-vino-rosado.png" alt="Jarra de Sangría de Vino Rosado">
+                <h4>Jarra de Sangría de Vino Rosado</h4>
+                <p>$85.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/sangria-vino-rosado.png" alt="Sangría de Vino Rosado">
+                <h4>Sangría de Vino Rosado</h4>
+                <p>$28.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/margarita-mango.png" alt="Margarita de Mango">
+                <h4>Margarita de Mango</h4>
+                <p>$30.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/pina-colada.png" alt="Piña Colada">
+                <h4>Piña Colada</h4>
+                <p>$26.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/las-vegas.png" alt="Las Vegas">
+                <h4>Las Vegas</h4>
+                <p>$28.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/jp-chenet.png" alt="Jp Chenet">
+                <h4>Jp Chenet</h4>
+                <p>$43.500</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/gin-tonic-frutos-salvajes.png" alt="Gin tonic frutos salvajes">
+                <h4>Gin tonic frutos salvajes</h4>
+                <p>$30.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/gin-tonic.png" alt="Gin & tonic">
+                <h4>Gin & tonic</h4>
+                <p>$29.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/mojito-clasico.png" alt="Mojito clásico">
+                <h4>Mojito clásico</h4>
+                <p>$24.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/mojito-frutos-rojos.png" alt="Mojito frutos rojos">
+                <h4>Mojito frutos rojos</h4>
+                <p>$26.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/sangria-vino-tinto.png" alt="Sangría vino tinto">
+                <h4>Sangría vino tinto</h4>
+                <p>$28.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/sangria-vino-blanco.png" alt="Sangría Vino Blanco">
+                <h4>Sangría Vino Blanco</h4>
+                <p>$28.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/copa-vino-gato-negro.png" alt="Copa De vino Gato Negro">
+                <h4>Copa De vino Gato Negro</h4>
+                <p>$30.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/horchata-white.png" alt="Horchata WHITE">
+                <h4>Horchata WHITE</h4>
+                <p>$25.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/ruta-pink.png" alt="RUTA PINK">
+                <h4>RUTA PINK</h4>
+                <p>$32.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/primavera.png" alt="PRIMAVERA">
+                <h4>PRIMAVERA</h4>
+                <p>$30.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card cocteles">
+                <img src="../../imgs/cocteles/capirina.png" alt="Caipiriña">
+                <h4>Caipiriña</h4>
+                <p>$25.000</p>
+                <button>Ver</button>
+              </div>
+        </section>
+
+        <!-- 🔸 BEBIDAS -->
+        <section class="categoria-productos bebidas">
+            <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/soda-hatsu.png" alt="Soda Hatsu">
+                <h4>Soda Hatsu</h4>
+                <p>$8.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/te-hatsu.png" alt="Té Hatsu">
+                <h4>Té Hatsu</h4>
+                <p>$11.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/bretana.png" alt="Bretaña">
+                <h4>Bretaña</h4>
+                <p>$6.500</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/colombiana.png" alt="Colombiana">
+                <h4>Colombiana</h4>
+                <p>$6.500</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/canada-dry-ginger-aloe.png" alt="Canada Dry Ginger Aloe">
+                <h4>Canada dry Ginger aloe</h4>
+                <p>$8.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/agua-hatsu-300ml.png" alt="Agua Hatsu 300 ml">
+                <h4>Agua Hatsu 300 ml</h4>
+                <p>$6.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/limonada-cerezada.png" alt="Limonada Cerezada">
+                <h4>Limonada Cerezada</h4>
+                <p>$11.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/lulo.png" alt="Lulo">
+                <h4>Lulo</h4>
+                <p>$9.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/limonada-hierbabuena.png" alt="Limonada Hierbabuena">
+                <h4>Limonada Hierbabuena</h4>
+                <p>$11.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/maracuya.png" alt="Maracuyá">
+                <h4>Maracuyá</h4>
+                <p>$9.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/limonada-de-coco.png" alt="Limonada de Coco">
+                <h4>Limonada de Coco</h4>
+                <p>$12.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/mango.png" alt="Mango">
+                <h4>Mango</h4>
+                <p>$9.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/limonada-natural.png" alt="Limonada Natural">
+                <h4>Limonada Natural</h4>
+                <p>$9.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/manzana.png" alt="Manzana">
+                <h4>Manzana</h4>
+                <p>$6.500</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/agua-nacimiento-gas-300ml.png" alt="Agua Nacimiento con gas 300 ml">
+                <h4>Agua Nacimiento con gas 300 ml</h4>
+                <p>$6.000</p>
+                <button>Ver</button>
+              </div>
+            
+              <!-- Productos recomendados -->
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/coca-cola-original-300ml.png" alt="Coca-Cola Original 300ml">
+                <span class="badge">⭐ Recomendado</span>
+                <h4>Coca-Cola Original 300ml</h4>
+                <p>$7.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/agua-manantial-sin-gas-300ml.png" alt="Agua Manantial Sin Gas 300 ml">
+                <span class="badge">⭐ Recomendado</span>
+                <h4>Agua Manantial Sin Gas 300 ml</h4>
+                <p>$6.000</p>
+                <button>Ver</button>
+              </div>
+              <div class="producto-card bebidas">
+                <img src="../../imgs/bebidas/gaseosa-coca-cola-sin-azucar-300ml.png" alt="Gaseosa Coca-Cola Sin Azúcar 300ml">
+                <span class="badge">⭐ Recomendado</span>
+                <h4>Gaseosa Coca-Cola Sin Azúcar 300ml</h4>
+                <p>$7.000</p>
+                <button>Ver</button>
+              </div>
+        </section>
+
+        <!-- 🔸 SODAS DE VERANO -->
+        <section class="categoria-productos sodas-micheladas">
+            <div class="producto-card sodas-micheladas">
+                <img src="../../imgs/micheladas/soda-mojito.png" alt="Soda Mojito">
+                <h4>Soda Mojito</h4>
+                <p>$12.000</p>
+                <button>Ver</button>
+              </div>
+            
+              <div class="producto-card sodas-micheladas">
+                <img src="../../imgs/micheladas/soda-fresa-cereza-mora.png" alt="Soda de Fresa, Cereza y Mora">
+                <h4>Soda de Fresa, Cereza y Mora</h4>
+                <p>$13.000</p>
+                <button>Ver</button>
+              </div>
+            
+              <div class="producto-card sodas-micheladas">
+                <img src="../../imgs/micheladas/soda-maracuya-limon.png" alt="Soda de Maracuyá y Limón">
+                <h4>Soda de Maracuyá y Limón</h4>
+                <p>$13.000</p>
+                <button>Ver</button>
+              </div>
+            
+              <div class="producto-card sodas-micheladas nuevo">
+                <img src="../../imgs/micheladas/soda-sandia-fresa-naranja.png" alt="Soda Sandía, Fresa y Naranja">
+                <span class="badge">Nuevo</span>
+                <h4>Soda Sandía, Fresa y Naranja</h4>
+                <p>$15.000</p>
+                <button>Ver</button>
+              </div>
+            
+              <div class="producto-card sodas-micheladas nuevo">
+                <img src="../../imgs/micheladas/soda-arandanos-toronja-limon.png" alt="Soda de Arándanos, Toronja y Limón">
+                <span class="badge">Nuevo</span>
+                <h4>Soda de Arándanos, Toronja y Limón</h4>
+                <p>$15.000</p>
+                <button>Ver</button>
+              </div>
+           
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="../../js/licores.js"></script>
+</body>
+</html>
