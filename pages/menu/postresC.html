@@ -6,7 +6,7 @@
   <title>Cafés y Postres | Ruta 66</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/combos.css">
-  <link rel="stylesheet" href="../../css/licores.css"> <!-- Puedes hacer uno nuevo si prefieres -->
+  <link rel="stylesheet" href="../../css/licores.css">
 </head>
 <body class="licores-page">
 
@@ -35,102 +35,89 @@
 
         <!-- 🔹 POSTRES -->
         <section class="categoria-productos postres">
-          <!-- Productos de postres van aquí -->
           <div class="producto-card postres nuevo">
             <img src="../../imgs/postres/brownie-helado.png" alt="Brownie con Helado">
             <h4>Brownie con Helado</h4>
             <p>$15.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Brownie con Helado - $15.000')">🛒 Añadir</button>
           </div>
-
           <div class="producto-card postres nuevo">
             <img src="../../imgs/postres/flan-caramelo.png" alt="Flan de Caramelo">
             <h4>Flan de Caramelo</h4>
             <p>$10.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Flan de Caramelo - $10.000')">🛒 Añadir</button>
           </div>
-
           <div class="producto-card postres">
             <img src="../../imgs/postres/torta-chocolate.png" alt="Torta de Chocolate">
             <h4>Torta de Chocolate</h4>
             <p>$8.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Torta de Chocolate - $8.000')">🛒 Añadir</button>
           </div>
         </section>
 
         <!-- 🔹 MALTEADAS -->
         <section class="categoria-productos malteadas">
-          <!-- Productos de malteadas van aquí -->
           <div class="producto-card malteadas">
             <img src="../../imgs/postres/malteada-fresa.png" alt="Malteada de fresa">
             <h4>Malteada de fresa</h4>
             <p>$16.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Malteada de fresa - $16.000')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card malteadas">
             <img src="../../imgs/postres/malteada-vainilla.png" alt="Malteada de vainilla">
             <h4>Malteada de vainilla</h4>
             <p>$16.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Malteada de vainilla - $16.000')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card malteadas">
             <img src="../../imgs/postres/malteada-chocolate.png" alt="Malteada de chocolate">
             <h4>Malteada de chocolate</h4>
             <p>$16.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Malteada de chocolate - $16.000')">🛒 Añadir</button>
           </div>
         </section>
 
         <!-- 🔹 CAFÉ -->
         <section class="categoria-productos cafe">
-          <!-- Productos de café van aquí -->
           <div class="producto-card cafe">
             <h4>Latte</h4>
             <p>$5.500</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Latte - $5.500')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card cafe">
             <h4>Expresso</h4>
             <p>$3.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Expresso - $3.000')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card cafe">
             <h4>Granizado de Café</h4>
             <p>$14.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Granizado de Café - $14.000')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card cafe">
             <h4>Mocaccino</h4>
             <p>$6.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Mocaccino - $6.000')">🛒 Añadir</button>
           </div>
         </section>
 
         <!-- 🔹 INFUSIONES -->
         <section class="categoria-productos infusiones">
-          <!-- Productos de infusiones van aquí -->
           <div class="producto-card infusiones">
             <h4>Frutos Rojos</h4>
             <p>$5.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Frutos Rojos - $5.000')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card infusiones">
             <img src="../../imgs/postres/frutos-amarillos.png" alt="Frutos Amarillos">
             <h4>Frutos Amarillos</h4>
             <p>$5.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Frutos Amarillos - $5.000')">🛒 Añadir</button>
           </div>
-        
           <div class="producto-card infusiones">
             <h4>Frutos Salvajes</h4>
             <p>$5.000</p>
-            <button>Ver</button>
+            <button onclick="agregarAlCarrito('Frutos Salvajes - $5.000')">🛒 Añadir</button>
           </div>
         </section>
 
@@ -138,6 +125,21 @@
     </main>
   </div>
 
-  <script src="../../js/licores.js"></script> <!-- Puedes hacer uno nuevo si prefieres -->
+  <!-- Carrito flotante y modal -->
+  <div id="carrito-flotante">
+    <button onclick="abrirCarrito()">🛒 Ver Carrito (<span id="carrito-contador">0</span>)</button>
+  </div>
+
+  <div id="modal-carrito" class="modal">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarCarrito()">×</span>
+      <h2>🛍️ Tu Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <a id="btn-hacer-pedido" href="#" target="_blank">📲 Hacer pedido por WhatsApp</a>
+    </div>
+  </div>
+
+  <script src="../../js/licores.js"></script>
+  <script src="../../js/carrito.js"></script>
 </body>
 </html>

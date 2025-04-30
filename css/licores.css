@@ -229,3 +229,41 @@
     font-size: 0.95rem;
   }
 }
+#carrito-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#carrito-flotante button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Modal básico */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.cerrar {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
