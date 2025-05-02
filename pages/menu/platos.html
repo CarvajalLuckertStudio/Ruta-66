@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<he</div>ad>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platos | Ruta 66</title>
@@ -370,7 +370,9 @@
     <h2>Baby Beef</h2>
     <p><strong>Precio:</strong> $54.000</p>
     <p>Res de 300gr, chimichuri de la casa, ensalada de encurtidos, acompañado de papas en pure. a la francesa, casco o criolla.</p>
+   
   </div>
+
 </div>
 <div id="modal-tomahok" class="modal">
   <div class="modal-content">
@@ -794,6 +796,8 @@
     <h4>Americana</h4>
     <p>$29.000</p>
     <button onclick="abrirModal('modal-burger-americana')">Ver</button>
+    <button onclick="agregarAlCarrito('Americana - $29.000')">🛒 Añadir</button>
+
   </div>
 
   <div class="producto-card hamburguesas">
@@ -869,6 +873,8 @@
     <h2>Americana</h2>
     <p><strong>Precio:</strong> $29.000</p>
     <p>Pan artesanal, 150 g de certified angus beef, queso cheddar, tomate y cebolla al grill, cebolla dulce y tocineta.</p>
+    <button onclick="agregarAlCarrito('Americana - $29.000')">🛒 Añadir</button>
+
   </div>
 </div>
 
@@ -1715,6 +1721,21 @@
     <p>Tomate cherry, queso de búfala, salsa pesto, albahaca fresca y reducción de balsámico.</p>
   </div>
 </div>
+<div id="carrito-flotante">
+  <button onclick="abrirCarrito()">🛒 Ver Carrito (<span id="carrito-contador">0</span>)</button>
+</div>
+
+<div id="modal-carrito" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarCarrito()">×</span>
+    <h2>🛍️ Tu Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <a id="btn-hacer-pedido" href="#" target="_blank">📲 Hacer pedido por WhatsApp</a>
+  </div>
+</div>
+
+<script src="../../js/licores.js"></script>
+<script src="../../js/carrito.js"></script> 
 
 
 
@@ -1723,4 +1744,3 @@
 
 
 
-  <script src="../../js/licores.js"></script>

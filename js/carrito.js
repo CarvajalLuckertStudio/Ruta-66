@@ -27,6 +27,6 @@ document.getElementById("btn-hacer-pedido").addEventListener("click", function (
     return;
   }
   const mensaje = carrito.map((item, i) => `${i + 1}. ${item}`).join('%0A');
-  const url = `https://api.whatsapp.com/send?phone=573006087815&text=Hola! 👋 Quiero hacer una reserva 📝 y estos son los productos que seleccioné:%0A${mensaje}`;
+  const url = `https://api.whatsapp.com/send?phone=573006087815&text=Hola! 👋 Quiero hacer un pedido 📝 y estos son los productos que quiero:%0A${mensaje}`;
   this.href = url;
 });
