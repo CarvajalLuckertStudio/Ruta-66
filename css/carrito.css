@@ -1,0 +1,115 @@
+.carrito-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: #111;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    font-family: sans-serif;
+  }
+  
+  .carrito-flotante h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+  }
+  
+  .carrito-lista {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .carrito-lista li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .carrito-lista button {
+    margin-left: 4px;
+    background: #e00;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .carrito-lista button:nth-child(2) {
+    background: #0a0;
+  }
+  
+  .carrito-lista button:nth-child(3) {
+    background: #e00;
+  }
+  
+  .btn-whatsapp {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  .btn-whatsapp:hover {
+    background: #1ebe5c;
+  }
+  
+  .contador-carrito {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    background: red;
+    color: white;
+    font-size: 13px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 1001;
+  }
+  
+  /* 📱 Estilos para pantallas pequeñas */
+  @media (max-width: 480px) {
+    .carrito-flotante {
+      width: 90%;
+      right: 5%;
+      bottom: 10px;
+      padding: 12px;
+    }
+  
+    .carrito-lista li {
+      font-size: 13px;
+    }
+  
+    .carrito-lista button {
+      font-size: 12px;
+      padding: 2px 4px;
+    }
+  
+    .btn-whatsapp {
+      padding: 8px 0;
+      font-size: 14px;
+    }
+  
+    .contador-carrito {
+      bottom: 80px;
+      right: 15px;
+      font-size: 12px;
+    }
+  }
+  
