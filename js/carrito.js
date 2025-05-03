@@ -38,12 +38,15 @@ function actualizarCarrito() {
   if (!contador || !lista) return;
 
   contador.textContent = carrito.reduce((acc, p) => acc + p.cantidad, 0);
+
   lista.innerHTML = carrito.map(item => `
     <li>
       ${item.nombre} x${item.cantidad} - $${(item.precio * item.cantidad).toLocaleString('es-CO')}
-      <button onclick="cambiarCantidad('${item.nombre}', ${item.cantidad - 1})">➖</button>
-      <button onclick="cambiarCantidad('${item.nombre}', ${item.cantidad + 1})">➕</button>
-      <button onclick="eliminarDelCarrito('${item.nombre}')">🗑️</button>
+      <div class="acciones-carrito">
+        <button onclick="cambiarCantidad('${item.nombre}', ${item.cantidad - 1})">➖</button>
+        <button onclick="cambiarCantidad('${item.nombre}', ${item.cantidad + 1})">➕</button>
+        <button onclick="eliminarDelCarrito('${item.nombre}')">🗑️</button>
+      </div>
     </li>
   `).join('');
 }
@@ -74,3 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 });
+
+function abrirModalCarrito() {
+  document.getElementById('modal-carrito').classList.add('mostrar');
+}
+
+function cerrarModalCarrito(e) {
+  const modal = document.getElementById('modal-carrito');
+  if (!e || e.target === modal) {
+    modal.classList.remove('mostrar');
+  }
+}

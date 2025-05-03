@@ -1,115 +1,131 @@
+/* Botón flotante con contador */
+.boton-carrito.combinado {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.contador-carrito {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Fondo del modal */
 .carrito-flotante {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background: #111;
-    color: #fff;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    z-index: 1000;
-    font-family: sans-serif;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mostrar modal */
+.carrito-flotante.mostrar {
+  display: flex;
+}
+
+/* Contenido del modal */
+.modal-contenido-carrito {
+  background: rgb(25, 24, 24);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 340px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Botón cerrar */
+.cerrar-modal {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Lista del carrito */
+.carrito-lista {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.carrito-lista li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.carrito-lista button {
+  margin-left: 4px;
+  background: #e00;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.carrito-lista button:nth-child(2) { background: #0a0; }
+.carrito-lista button:nth-child(3) { background: #e00; }
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  background: #25D366;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .modal-contenido-carrito {
+    width: 95%;
+    padding: 16px;
   }
-  
-  .carrito-flotante h2 {
-    margin-top: 0;
-    font-size: 18px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
-  }
-  
-  .carrito-lista {
-    list-style: none;
-    padding: 0;
-    max-height: 200px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-  }
-  
-  .carrito-lista li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  
-  .carrito-lista button {
-    margin-left: 4px;
-    background: #e00;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 2px 6px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .carrito-lista button:nth-child(2) {
-    background: #0a0;
-  }
-  
-  .carrito-lista button:nth-child(3) {
-    background: #e00;
-  }
-  
   .btn-whatsapp {
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: #25d366;
-    color: white;
-    text-decoration: none;
-    padding: 10px 0;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background 0.2s;
+    font-size: 14px;
+    padding: 8px;
   }
-  
-  .btn-whatsapp:hover {
-    background: #1ebe5c;
-  }
-  
   .contador-carrito {
-    position: fixed;
-    bottom: 85px;
-    right: 20px;
-    background: red;
-    color: white;
-    font-size: 13px;
-    padding: 5px 9px;
-    border-radius: 50%;
-    font-weight: bold;
-    z-index: 1001;
+    font-size: 10px;
+    padding: 2px 5px;
   }
-  
-  /* 📱 Estilos para pantallas pequeñas */
-  @media (max-width: 480px) {
-    .carrito-flotante {
-      width: 90%;
-      right: 5%;
-      bottom: 10px;
-      padding: 12px;
-    }
-  
-    .carrito-lista li {
-      font-size: 13px;
-    }
-  
-    .carrito-lista button {
-      font-size: 12px;
-      padding: 2px 4px;
-    }
-  
-    .btn-whatsapp {
-      padding: 8px 0;
-      font-size: 14px;
-    }
-  
-    .contador-carrito {
-      bottom: 80px;
-      right: 15px;
-      font-size: 12px;
-    }
-  }
-  
+}
+
+.acciones-carrito {
+  display: flex;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.acciones-carrito button {
+  flex: 1;
+  padding: 4px 0;
+  text-align: center;
+}
