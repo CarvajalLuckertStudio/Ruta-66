@@ -18,10 +18,14 @@
   </header>
 
   <main class="producto-grid">
-    <div class="producto-card" onclick="abrirModal('combo1')">
+    <div class="producto-card">
       <img src="../../imgs/combos.jpg" alt="Combo Hamburguesa" />
       <h3>Hamburguesa + Coca Cola</h3>
       <p>$32.500</p>
+      <div class="producto-card-buttons">
+        <button onclick="abrirModal('combo1')">Ver</button>
+        <button onclick="agregarAlCarrito('Hamburguesa Americana + Coca Cola 300 ml', 32500)">Añadir</button>
+      </div>
     </div>
   </main>
 
@@ -48,7 +52,7 @@
   </div>
 
   <script src="../../js/combos.js"></script>
-<div id="componente-carrito"></div>
-<script src="../../js/carrito.js"></script>
+  <div id="componente-carrito"></div>
+  <script src="../../js/carrito.js"></script>
 </body>
 </html>

@@ -208,5 +208,32 @@ body {
     cursor: pointer;
     font-size: 20px;
   }
+
+  .producto-card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+  }
   
+  .producto-card-buttons button {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .producto-card-buttons button:hover {
+    background-color: #333;
+  }
+  
+  .producto-card-buttons button:last-child::before {
+    content: "🛒";
+    margin-right: 6px;
+  }
   
