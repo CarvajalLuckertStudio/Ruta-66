@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const botonCategorias = document.getElementById('toggle-categorias');
   const menuCategorias = document.querySelector('.filtro-categorias');
 
+  // 👇 Esto hace que se abra automáticamente en móviles
+  if (window.innerWidth <= 600 && menuCategorias) {
+    menuCategorias.classList.add('abierto');
+  }
+
   if (botonCategorias && menuCategorias) {
     botonCategorias.addEventListener('click', () => {
       menuCategorias.classList.toggle('abierto');
@@ -64,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 document.querySelectorAll('.modal').forEach(modal => {
   modal.addEventListener('click', function(e) {
