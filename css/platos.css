@@ -108,20 +108,20 @@
   }
 
   .producto-card {
-    background-color: #ffffff;
+    background-color: #1a1a1a; /* fondo gris oscuro */
     border-radius: 10px;
     padding: 1em;
-    text-align: center;
     box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+    text-align: center;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     border: 1px solid #FFD700;
   }
-
+  
   .producto-card:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
   }
-
+  
   .producto-card img {
     height: 140px;
     width: auto;
@@ -129,35 +129,39 @@
     display: block;
     margin: 0 auto 0.8em;
   }
-
+  
   .producto-card h4 {
+    margin-top: 0.5em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    color: #000;
-    margin-top: 0.5em;
+    color: #FFD700; /* nombre del producto en amarillo */
     font-weight: bold;
   }
-
+  
   .producto-card p {
-    color: #000;
+    color: #fff !important; /* precio blanco */
     margin: 0.5em 0;
     font-weight: bold;
   }
-
+  
   .producto-card button {
-    background-color: #222;
-    color: #fff;
-    border: none;
+    background-color: #000;
+    color: #fff; /* texto blanco */
+    border: 1px solid #FFD700;
     padding: 0.5em 1em;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
   }
-
+  
   .producto-card button:hover {
     background-color: #FFD700;
-    color: #000;
+    color: #000; /* texto negro al hacer hover */
   }
+  
+  
+  
 
   #toggle-categorias {
     display: none;
