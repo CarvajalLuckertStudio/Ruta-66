@@ -120,6 +120,7 @@
     color: white;
   }
   
+  
   .producto-card:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
