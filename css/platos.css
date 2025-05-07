@@ -108,13 +108,16 @@
   }
 
   .producto-card {
-    background-color: #1a1a1a; /* fondo gris oscuro */
+    background-image: url('../imgs/fondodeloscuadros.jpeg');
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     padding: 1em;
     box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
     border: 1px solid #FFD700;
+    color: white;
   }
   
   .producto-card:hover {
@@ -134,12 +137,12 @@
     margin-top: 0.5em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    color: #FFD700; /* nombre del producto en amarillo */
+    color: #181714; /* nombre del producto en amarillo */
     font-weight: bold;
   }
   
   .producto-card p {
-    color: #fff !important; /* precio blanco */
+    color: #0c0b0b !important; /* precio blanco */
     margin: 0.5em 0;
     font-weight: bold;
   }

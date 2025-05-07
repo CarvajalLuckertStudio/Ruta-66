@@ -37,14 +37,16 @@ body {
   }
   
   .producto-card {
-    background-color: #222;
-    border: 2px solid #FFD700;
+    background-image: url('../imgs/fondodeloscuadros.jpeg');
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    padding: 1em;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border: 1px solid #FFD700;
+    color: white;
   }
   
   .producto-card:hover {
@@ -60,7 +62,7 @@ body {
   .producto-card h3,
   .producto-card p {
     padding: 0.8em 1em;
-    color: #FFD700;
+    color: #11110e;
     font-family: 'Cinzel', serif;
     font-size: 1.1rem;
     text-align: center;
