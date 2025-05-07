@@ -1,8 +1,12 @@
 .contenedor-licores {
   display: flex;
   min-height: 100vh;
-  background-color: #111;
+  background-image: url('../imgs/'); /* ajusta la ruta según tu estructura */
+  background-size: cover;     /* para que cubra todo el contenedor */
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 /* SIDEBAR */
 .filtro-categorias {
