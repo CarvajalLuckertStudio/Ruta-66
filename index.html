@@ -5,36 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruta 66</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <style>
-    
-.promo-banner {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 1000;
-  animation: fadeSlideIn 1.2s ease-out forwards;
-  opacity: 0;
-  transform: translateY(40px);
-  max-width: 350px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  overflow: center;
-}
+    .promo-banner {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 350px;
+      z-index: 1000;
+      opacity: 0;
+      transform: translateY(40px);
+      max-width: 500px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+      overflow: hidden;
+    }
 
+    .promo-banner.fade-in {
+      animation: fadeSlideIn 1.2s ease-out forwards;
+    }
 
-.promo-image {
-  width: 100%;
-  display: block;
-  border-radius: 12px;
-}
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+    }
 
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    .promo-image {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .close-btn, .close-btn2 {
+      position: absolute;
+      background: #000000aa;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      top: 8px;
+      right: 10px;
+    }
+
+    .close-btn2 {
+      top: 470px;
+      right: 160px;
+    }
+
+    .fire-effect {
+      box-shadow:
+        0 0 20px rgba(255, 80, 0, 0.8),
+        0 0 40px rgba(255, 120, 0, 0.6),
+        0 0 60px rgba(255, 160, 0, 0.4);
+      animation: flicker 1s infinite alternate;
+      transition: transform 0.3s ease;
+    }
+
+    .fire-effect:hover {
+      transform: scale(1.03);
+    }
+
+    @keyframes flicker {
+      0% {
+        box-shadow:
+          0 0 20px rgba(255, 80, 0, 0.8),
+          0 0 40px rgba(255, 120, 0, 0.6),
+          0 0 60px rgba(255, 160, 0, 0.4);
+      }
+      50% {
+        box-shadow:
+          0 0 30px rgba(255, 100, 0, 1),
+          0 0 60px rgba(255, 140, 0, 0.8),
+          0 0 80px rgba(255, 180, 0, 0.6);
+      }
+      100% {
+        box-shadow:
+          0 0 20px rgba(255, 60, 0, 0.7),
+          0 0 40px rgba(255, 100, 0, 0.5),
+          0 0 50px rgba(255, 140, 0, 0.3);
+      }
+    }
 
     body, html {
       margin: 0;
@@ -108,81 +174,23 @@
       .btn {
         font-size: 1rem;
       }
-      /* Botón de cierre */
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  background: #000000aa;
-  color: white;
-  border: none;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-/* Animación */
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-}
-      
     }
   </style>
 </head>
-<script>
-  function closePromo() {
-    const banner = document.getElementById('promoBanner');
-    banner.style.animation = 'fadeOut 0.5s ease forwards';
-    setTimeout(() => {
-      banner.style.display = 'none';
-    }, 500);
-  }
-
-  function goToCocteles() {
-    // Activar la categoría cocteles
-    filtrar('cocteles');
-
-    // Esperar a que se actualice el contenido (pequeño delay)
-    setTimeout(() => {
-      const coctelSection = document.querySelector('.categoria-productos.cocteles');
-      if (coctelSection) {
-        coctelSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 300);
-
-    // Si el ancho es móvil, cerrar el anuncio
-    if (window.innerWidth < 768) {
-      closePromo();
-    }
-  }
-</script>
 
 <body>
   <!-- Contenedor del anuncio -->
-  <div class="promo-banner" id="promoBanner">
-    <img src="./imgs/anuncio cocteles.jpeg" alt="Promo 2x1 Ruta 66" class="promo-image" onclick="window.location.href='pages/menu/bebidas.html#cocteles'" />
+  <div class="promo-banner fire-effect" id="promoBanner">
+    <img src="./imgs/anuncio cocteles.jpeg" alt="Promo 2x1 Ruta 66" class="promo-image"
+         onclick="window.location.href='pages/menu/bebidas.html#cocteles'" />
     <button class="close-btn" onclick="closePromo()">×</button>
+    <button class="close-btn2" onclick="closePromo()">×</button>
   </div>
-  
-
 
   <div class="home-wrapper">
     <img src="./imgs/LogoOriginal.jpeg" alt="Logo del restaurante" class="logo" />
-    
     <button class="btn" onclick="window.location.href='pages/menu/menut.html'">Ver Menú u Ordenar</button>
-    <button class="btn" onclick="window.location.href='https://www.google.com/maps/place/Ruta+66/@11.0078173,-74.8010915,802m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8ef42d1eeb56243d:0x509a50c813d46edf!8m2!3d11.0078121!4d-74.7964781!16s%2Fg%2F11h8fs2t2s?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D'">Cómo Llegar</button>
+    <button class="btn" onclick="window.location.href='https://www.google.com/maps/place/Ruta+66/@11.0078173,-74.8010915,802m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8ef42d1eeb56243d:0x509a50c813d46edf!8m2!3d11.0078121!4d-74.7964781!16s%2Fg%2F11h8fs2t2s?entry=ttu'">Cómo Llegar</button>
     <button class="btn" onclick="window.location.href='https://api.whatsapp.com/send?phone=573006087815&text=Hola%20👋%2C%20quiero%20hacer%20una%20reserva%20📅%2C%20mi%20nombre%20es%3A'">Hacer reserva</button>
 
     <div class="social-icons">
@@ -190,17 +198,20 @@
       <a href="https://api.whatsapp.com/send?phone=573006087815&text=Hola!%20Quiero%20hacer%20un%20pedido%2C%20mi%20nombre%20es" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
+
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const banner = document.getElementById("promoBanner");
+      banner.classList.add("fade-in");
+    });
+
     function closePromo() {
       const banner = document.getElementById('promoBanner');
       banner.style.animation = 'fadeOut 0.5s ease forwards';
       setTimeout(() => {
         banner.style.display = 'none';
-      }, 500); // tiempo igual a la duración de la animación
+      }, 500);
     }
   </script>
-  
-
-
-</body> 
+</body>
 </html>
