@@ -6,6 +6,36 @@
   <title>Ruta 66</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
+    
+.promo-banner {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  animation: fadeSlideIn 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px);
+  max-width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  overflow: center;
+}
+
+
+.promo-image {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
     body, html {
       margin: 0;
       padding: 0;
@@ -78,10 +108,75 @@
       .btn {
         font-size: 1rem;
       }
+      /* Botón de cierre */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: #000000aa;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Animación */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+      
     }
   </style>
 </head>
+<script>
+  function closePromo() {
+    const banner = document.getElementById('promoBanner');
+    banner.style.animation = 'fadeOut 0.5s ease forwards';
+    setTimeout(() => {
+      banner.style.display = 'none';
+    }, 500);
+  }
+
+  function goToCocteles() {
+    // Activar la categoría cocteles
+    filtrar('cocteles');
+
+    // Esperar a que se actualice el contenido (pequeño delay)
+    setTimeout(() => {
+      const coctelSection = document.querySelector('.categoria-productos.cocteles');
+      if (coctelSection) {
+        coctelSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 300);
+
+    // Si el ancho es móvil, cerrar el anuncio
+    if (window.innerWidth < 768) {
+      closePromo();
+    }
+  }
+</script>
+
 <body>
+  <!-- Contenedor del anuncio -->
+  <div class="promo-banner" id="promoBanner">
+    <img src="./imgs/anuncio cocteles.jpeg" alt="Promo 2x1 Ruta 66" class="promo-image" onclick="window.location.href='pages/menu/bebidas.html#cocteles'" />
+    <button class="close-btn" onclick="closePromo()">×</button>
+  </div>
+  
+
 
   <div class="home-wrapper">
     <img src="./imgs/LogoOriginal.jpeg" alt="Logo del restaurante" class="logo" />
@@ -95,6 +190,17 @@
       <a href="https://api.whatsapp.com/send?phone=573006087815&text=Hola!%20Quiero%20hacer%20un%20pedido%2C%20mi%20nombre%20es" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
+  <script>
+    function closePromo() {
+      const banner = document.getElementById('promoBanner');
+      banner.style.animation = 'fadeOut 0.5s ease forwards';
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 500); // tiempo igual a la duración de la animación
+    }
+  </script>
+  
+
 
 </body> 
 </html>
