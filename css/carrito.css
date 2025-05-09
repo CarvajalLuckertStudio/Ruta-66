@@ -1,4 +1,3 @@
-/* Botón flotante con contador */
 .boton-carrito.combinado {
   position: fixed;
   bottom: 20px;
@@ -25,7 +24,6 @@
   font-weight: bold;
 }
 
-/* Fondo del modal */
 .carrito-flotante {
   display: none;
   position: fixed;
@@ -36,12 +34,10 @@
   align-items: center;
 }
 
-/* Mostrar modal */
 .carrito-flotante.mostrar {
   display: flex;
 }
 
-/* Contenido del modal */
 .modal-contenido-carrito {
   background: rgb(25, 24, 24);
   padding: 20px;
@@ -53,7 +49,6 @@
   position: relative;
 }
 
-/* Botón cerrar */
 .cerrar-modal {
   position: absolute;
   top: 8px;
@@ -62,7 +57,6 @@
   cursor: pointer;
 }
 
-/* Lista del carrito */
 .carrito-lista {
   list-style: none;
   padding: 0;
@@ -79,17 +73,15 @@
   margin-left: 4px;
   background: #e00;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   border-radius: 4px;
   padding: 2px 6px;
   font-size: 14px;
   cursor: pointer;
 }
-
 .carrito-lista button:nth-child(2) { background: #0a0; }
 .carrito-lista button:nth-child(3) { background: #e00; }
 
-/* Botón WhatsApp */
 .btn-whatsapp {
   display: block;
   text-align: center;
@@ -102,7 +94,6 @@
   font-weight: bold;
 }
 
-/* Responsive para móviles */
 @media (max-width: 480px) {
   .modal-contenido-carrito {
     width: 95%;
@@ -123,9 +114,24 @@
   gap: 6px;
   margin-top: 5px;
 }
-
 .acciones-carrito button {
   flex: 1;
   padding: 4px 0;
   text-align: center;
+}
+
+@keyframes fadeInCarrito {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeOutCarrito {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.95); }
+}
+
+.modal-contenido-carrito.animar-entrada {
+  animation: fadeInCarrito 0.4s ease-out forwards;
+}
+.modal-contenido-carrito.animar-salida {
+  animation: fadeOutCarrito 0.4s ease-in forwards;
 }
