@@ -237,7 +237,7 @@
     }
 
     .filtro-categorias.abierto {
-      max-height: 500px;
+      max-height: 800px;
       padding: 1em;
     }
 

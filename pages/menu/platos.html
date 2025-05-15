@@ -22,19 +22,25 @@
     <aside class="filtro-categorias">
       <h3>Categorías</h3>
       <ul>
+
         <li class="activo" onclick="filtrar('todos')">Todos</li>
+              <li onclick="filtrar('grill-66')">Grill 66</li> <li onclick="filtrar('Arroces')">Arroces</li>
+
+        <li onclick="filtrar('lasagna')">Lasagna</li>
         <li onclick="filtrar('entradas')">Entradas</li>
-        <li onclick="filtrar('grill-66')">Grill 66</li>
+ 
         <li onclick="filtrar('menu-infantil')">Menú Infantil</li>
         <li onclick="filtrar('pastas')">Pastas</li>
         <li onclick="filtrar('sandwiches')">Sándwiches</li>
         <li onclick="filtrar('hamburguesas')">Hamburguesas</li>
         <li onclick="filtrar('ruta-del-mar')">Ruta del mar</li>
         <li onclick="filtrar('lasagna')">Lasagna</li>
-        <li onclick="filtrar('arroces')">Arroces</li>
+        <li onclick="filtrar('Arroces')">Arroces</li>
         <li onclick="filtrar('ensaladas')">Ensaladas/Bowl</li>
         <li onclick="filtrar('pizzas-tradicionales')">Pizzas Tradicionales</li>
         <li onclick="filtrar('pizzas-gourmet')">Pizzas Gourmet</li>
+        <li onclick="filtrar('lasagna')">Lasagna</li>
+
       </ul>
     </aside>
 
@@ -42,6 +48,7 @@
       <h2 class="titulo-categoria" id="categoria-titulo">Todos</h2>
 
       <div class="grid-productos" id="productos-container">
+        
         <!-- 🔸 ENTRADAS -->
         <section class="categoria-productos entradas">
           <div class="producto-card entradas">
@@ -698,7 +705,7 @@
 <!-- 🔸 MENÚ INFANTIL -->
 <section class="categoria-productos menu-infantil">
   <div class="producto-card menu-infantil">
-    <img src="../../imgs/infantil/babybeef-infantil.png" alt="Baby Beef Infantil">
+    <img src="../../imgs/infantil/baby divercaja.jpg" alt="Baby Beef Infantil">
     <h4>Baby Beef Infantil</h4>
     <p>$34.000</p>
     <div class="producto-card-buttons">
@@ -708,7 +715,7 @@
   </div>
 
   <div class="producto-card menu-infantil">
-    <img src="../../imgs/infantil/nuggets-de-pollo.png" alt="Nuggets De Pollo">
+    <img src="../../imgs/infantil/nuggets divercajas.jpg" alt="Nuggets De Pollo">
     <h4>Nuggets De Pollo</h4>
     <p>$28.000</p>
     <div class="producto-card-buttons">
@@ -718,7 +725,7 @@
   </div>
 
   <div class="producto-card menu-infantil">
-    <img src="../../imgs/infantil/pechuga-pollo-infantil.png" alt="Pechuga de Pollo Infantil">
+    <img src="../../imgs/infantil/pechuga divercaja.jpg" alt="Pechuga de Pollo Infantil">
     <h4>Pechuga de Pollo Infantil</h4>
     <p>$28.000</p>
     <div class="producto-card-buttons">
@@ -728,7 +735,7 @@
   </div>
 
   <div class="producto-card menu-infantil">
-    <img src="../../imgs/infantil/fajitas-de-pollo.png" alt="Fajitas de Pollo">
+    <img src="../../imgs/infantil/fajitas de pollo.jpg" alt="Fajitas de Pollo">
     <h4>Fajitas de Pollo</h4>
     <p>$28.000</p>
     <div class="producto-card-buttons">
@@ -738,7 +745,7 @@
   </div>
 
   <div class="producto-card menu-infantil">
-    <img src="../../imgs/infantil/mini-pizza.png" alt="Mini Pizza">
+    <img src="../../imgs/infantil/pizza divercaja.jpg" alt="Mini Pizza">
     <h4>Mini Pizza</h4>
     <p>$27.500</p>
     <div class="producto-card-buttons">
@@ -753,7 +760,7 @@
 <div id="modal-baby-beef-infantil" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-baby-beef-infantil')">×</span>
-    <img src="../../imgs/infantil/babybeef-infantil.png" alt="Baby Beef Infantil">
+    <img src="../../imgs/infantil/baby divercaja.jpg" alt="Baby Beef Infantil">
     <h2>Baby Beef Infantil</h2>
     <p><strong>Precio:</strong> $34.000</p>
     <p>Acompañado con papas fritas y bebida.</p>
@@ -763,7 +770,7 @@
 <div id="modal-nuggets-de-pollo" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-nuggets-de-pollo')">×</span>
-    <img src="../../imgs/infantil/nuggets-de-pollo.png" alt="Nuggets De Pollo">
+    <img src="../../imgs/infantil/nuggets divercajas.jpg" alt="Nuggets De Pollo">
     <h2>Nuggets De Pollo</h2>
     <p><strong>Precio:</strong> $28.000</p>
     <p>Acompañado con papas fritas y bebida.</p>
@@ -773,7 +780,7 @@
 <div id="modal-pechuga-pollo-infantil" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-pechuga-pollo-infantil')">×</span>
-    <img src="../../imgs/infantil/pechuga-pollo-infantil.png" alt="Pechuga de Pollo Infantil">
+    <img src="../../imgs/infantil/pechuga divercaja.jpg" alt="Pechuga de Pollo Infantil">
     <h2>Pechuga de Pollo Infantil</h2>
     <p><strong>Precio:</strong> $28.000</p>
     <p>Acompañado de papas fritas y bebida.</p>
@@ -783,7 +790,7 @@
 <div id="modal-fajitas-de-pollo" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-fajitas-de-pollo')">×</span>
-    <img src="../../imgs/infantil/fajitas-de-pollo.png" alt="Fajitas de Pollo">
+    <img src="../../imgs/infantil/fajitas de pollo.jpg" alt="Fajitas de Pollo">
     <h2>Fajitas de Pollo</h2>
     <p><strong>Precio:</strong> $28.000</p>
     <p>Acompañado con papas fritas y bebida.</p>
@@ -793,7 +800,7 @@
 <div id="modal-mini-pizza" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-mini-pizza')">×</span>
-    <img src="../../imgs/infantil/mini-pizza.png" alt="Mini Pizza">
+    <img src="../../imgs/infantil/pizza divercaja.jpg" alt="Mini Pizza">
     <h2>Mini Pizza</h2>
     <p><strong>Precio:</strong> $27.500</p>
     <p>Acompañado con bebida y diverticaja.</p>
@@ -1949,7 +1956,36 @@
     </div>
   </div>
 </section>
+<!-- Modales de Arroces -->
+<div id="modal-arroz-con-pollo" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-arroz-con-pollo')">×</span>
+    <img src="../../imgs/arroces/w_1200_XaBESmGYHV_arroz_pollo.avif" alt="Arroz con Pollo">
+    <h2>Arroz con Pollo</h2>
+    <p><strong>Precio:</strong> $31.000</p>
+    <p>Vegetales salteados, 200 gr de pechuga, 150 gr de arroz, acompañado con papa francesa.</p>
+  </div>
+</div>
 
+<div id="modal-arroz-trifasico" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-arroz-trifasico')">×</span>
+    <img src="../../imgs/arroces/w_1200_vzNciSnPTl_arroz_trifasico.avif" alt="Arroz Trifásico">
+    <h2>Arroz Trifásico</h2>
+    <p><strong>Precio:</strong> $35.000</p>
+    <p>Cerdo, pollo, res, vegetales salteados, salsa teriyaki, acompañado con papa francesa.</p>
+  </div>
+</div>
+
+<div id="modal-arroz-frutos-del-mar" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-arroz-frutos-del-mar')">×</span>
+    <img src="../../imgs/arroces/w_1200_jdiSRv49ZJ_arroz_frutos_del_mar.avif" alt="Arroz Frutos del Mar">
+    <h2>Arroz Frutos del Mar</h2>
+    <p><strong>Precio:</strong> $38.000</p>
+    <p>Mix de mariscos salteados con bisque, vegetales, acompañado con papa francesa.</p>
+  </div>
+</div>
 
 <!-- Modales de Pizzas Gourmet -->
 <div id="modal-carnivora" class="modal">
@@ -2011,7 +2047,7 @@
     <p>Fríjol refrito, salsa boloñesa, carne molida, maíz, tomate picado, nachos, jalapeños y queso.</p>
   </div>
 </div>
-
+ 
 <div id="modal-ruta-66" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-ruta-66')">×</span>
