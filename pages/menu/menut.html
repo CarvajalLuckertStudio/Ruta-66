@@ -8,8 +8,59 @@
   <link rel="stylesheet" href="../../css/styles.css" />
   <link rel="stylesheet" href="../../css/carrito.css">                                                                    
 
+  <style>
+    /* 🔥 Estilos del anuncio */
+    .promo-banner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      max-width: 400px;
+      z-index: 9999;
+      background: transparent;
+      border-radius: 16px;
+      opacity: 0;
+      transition: all 0.5s ease;
+      box-shadow: 0 0 30px rgba(255, 100, 0, 0.6);
+    }
+    .promo-banner.show {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    .promo-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #000000d0;
+      color: #fff;
+      border: none;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+  </style>
 </head>
+
 <body class="menu-page">
+
+  <!-- 🔥 Anuncio centrado -->
+  <div class="promo-banner" id="promoBanner">
+    <a href="bebidas.html#cocteles">
+      <img src="../../imgs/anuncio cocteles.jpeg" alt="Promo 2x1 Ruta 66" class="promo-image" />
+    </a>
+    <button class="close-btn" onclick="closePromo()">×</button>
+  </div>
 
   <header class="menu-header">
     <a href="../../index.html" class="back-btn">←</a>
@@ -17,34 +68,56 @@
   </header>
 
   <main class="menu-grid">
-
     <a href="platos.html" class="menu-card">
       <img src="../../imgs/nuevaPLATOS.jpeg" alt="Combos" />
-
     </a>
-
     <a href="bebidas.html" class="menu-card">
       <img src="../../imgs/bebidasycocteles.png" alt="Platos" />
-
     </a>
-
     <a href="postresC.html" class="menu-card">
       <img src="../../imgs/postresycafes.png" alt="Cafés y Postres" />
-  
     </a>
-
     <a href="licores.html" class="menu-card">
       <img src="../../imgs/vinosylicores.png" alt="Bebidas" />
-      
     </a>
-
     <a href="combos.html" class="menu-card">
       <img src="../../imgs/NuevoCOMBOS.jpeg" alt="Vinos" />
-      
     </a>
-
   </main>
-<div id="componente-carrito"></div>
-<script src="../../js/carrito.js"></script>
+
+  <div id="componente-carrito"></div>
+  <script src="../../js/carrito.js"></script>
+
+  <!-- ⚙️ Script del anuncio -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("promoBanner");
+
+    // Mostrar el anuncio
+    setTimeout(() => {
+      banner.classList.add("show");
+
+      // Ocultar el anuncio después de 3 segundos (3000ms)
+      setTimeout(() => {
+        banner.classList.remove("show");
+
+        // Eliminarlo del DOM después de la transición
+        setTimeout(() => {
+          banner.style.display = "none";
+        }, 500);
+      }, 3000);
+
+    }, 100);
+  });
+
+  function closePromo() {
+    const banner = document.getElementById("promoBanner");
+    banner.classList.remove("show");
+    setTimeout(() => {
+      banner.style.display = "none";
+    }, 500);
+  }
+</script>
+
 </body>
 </html>
