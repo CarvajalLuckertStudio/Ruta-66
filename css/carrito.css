@@ -39,15 +39,22 @@
 }
 
 .modal-contenido-carrito {
-  background: rgb(25, 24, 24);
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 340px;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-}
+    background: rgb(25, 24, 24);
+    /* Si quieres un fondo con imagen: */
+    background-image: url('../imgs/FONDOPLATOSRUIZ.png'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* o 'contain' dependiendo del efecto que busques */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Resto de tus estilos existentes */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 340px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
 
 .cerrar-modal {
   position: absolute;
@@ -64,6 +71,8 @@
 }
 
 .carrito-lista li {
+  color: hsl(0, 0%, 0%);
+  font-weight: bold; /* Texto en negrita */
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.5;
