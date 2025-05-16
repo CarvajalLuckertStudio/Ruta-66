@@ -341,6 +341,54 @@
     .badge { font-size: 0.75rem; }
    
     }
-    
-    
-  
+
+
+  /* Contenedor botones flotantes a la izquierda */
+#botones-flotantes {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: row; /* ahora en fila */
+  gap: 10px;
+  z-index: 10000;
+}
+
+/* Estilo común para los botones */
+#botones-flotantes button {
+  background-color: #2c2c2c; /* fondo gris oscuro */
+  color: #fff; /* texto blanco */
+  border: 2px solid #FFD700; /* borde dorado */
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  min-width: 90px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Hover */
+#botones-flotantes button:hover {
+  background-color: #FFD700; /* fondo dorado */
+  color: #2c2c2c; /* texto oscuro */
+  border-color: #b38f00;
+}
+
+/* Responsive para móvil */
+@media screen and (max-width: 600px) {
+  #botones-flotantes {
+    bottom: 15px;
+    left: 15px;
+    gap: 8px;
+  }
+
+  #botones-flotantes button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    min-width: 80px;
+  }
+}
+
