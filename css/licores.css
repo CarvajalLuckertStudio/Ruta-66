@@ -2,10 +2,10 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
-  background-image: url('../imgs/'); /* ajusta la ruta según tu estructura */
   background-size: cover;     /* para que cubra todo el contenedor */
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 
@@ -56,7 +56,7 @@
 }
 
 .filtro-categorias li.activo {
-  background-color: #FFD700;
+  background-color:   #FFD700;
   color: #000;
   font-weight: bold;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 215, 0, 0.4);
@@ -96,6 +96,7 @@
 /* PRODUCTO CARD */
 .producto-card {
   position: relative;
+  width: 96%;
   border-radius: 10px;
   padding: 1em;
   overflow: hidden;
@@ -209,7 +210,7 @@
     flex-direction: column;
   }
 
-  /* BOTÓN DE CATEGORÍAS EN EL HP CELULAR */
+  /* BOTÓN DE CATEGORÍAS EN El CELULAR */
   #toggle-categorias {
     display: block;
     margin: 10px auto 0.5em;
@@ -238,7 +239,7 @@
     position: absolute;
     top: 10px;
     left: 0;
-    width: 100%;
+    width: 95%;
     max-height: 0;
     overflow: hidden;
     background-color: #f5f0dc;
