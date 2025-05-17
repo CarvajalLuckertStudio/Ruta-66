@@ -1,102 +1,119 @@
-.contenedor-licores {
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+/*     parte de arriba
+ */
+.menu-header {
   display: flex;
-  min-height: 100vh;
-  width: 100%;
-  background-size: cover;     /* para que cubra todo el contenedor */
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  align-items: center;
+  padding: 1em;
+  background-color: #000;
+  color: #FFD700;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  border-bottom: none;
+}
+/*     boton de atras
+ */
+.back-btn {
+  text-decoration: none;
+  color: #FFD700;
+  font-size: 1.5rem;
+  margin-right: 1em;
 }
 
+.contenedor-platos {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
 
-/* SIDEBAR */
 .filtro-categorias {
+
   width: 250px;
   background: #f5f0dc;
   padding: 2em 1em;
   border-right: 3px solid #FFD700;
+  transition: max-height 0.4s ease;
   animation: slideInLeft 0.6s ease-in-out;
 }
 
 .filtro-categorias h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1.5em;
   font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
   color: #000;
   text-transform: uppercase;
   border-bottom: 2px solid #FFD700;
   padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .filtro-categorias ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .filtro-categorias li {
   padding: 0.7em 1em;
   margin-bottom: 0.5em;
-  background-color: transparent;
+  background: transparent;
+  color: #333;
   cursor: pointer;
   border-radius: 20px;
-  transition: all 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  color: #333;
-  font-size: 1rem;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 1rem;
   letter-spacing: 0.5px;
 }
 
-.filtro-categorias li:hover {
+.filtro-categorias li:hover,
+.filtro-categorias li.activo {
+
   background-color: #FFD700;
   color: #000;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
   transform: translateX(5px);
 }
 
-.filtro-categorias li.activo {
-  background-color:   #FFD700;
-  color: #000;
-  font-weight: bold;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 12px rgba(255, 215, 0, 0.4);
-  transform: translateX(8px);
+.contenedor-productos {
+  flex: 1;
+  padding: 2em;
+  overflow-x: hidden;
 }
 
-/* TITULO DE CATEGORÍA */
 .titulo-categoria {
   font-family: 'Cinzel', serif;
   font-size: 2rem;
   color: #FFD700;
-  margin: 1em 0 0.5em 0;
+  text-transform: uppercase;
+  margin-bottom: 1em;
   border-bottom: 2px solid #FFD700;
   padding-bottom: 0.3em;
-  text-transform: uppercase;
 }
 
-/* CONTENEDOR DE PRODUCTOS */
-.contenedor-productos {
-  flex: 1;
-  padding: 2em;
-}
-
-/* CATEGORÍA MODULAR */
 .grid-productos {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .categoria-productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* PRODUCTO CARD */
 .producto-card {
   position: relative;
-  width: 96%;
+  width: 94%;
   border-radius: 10px;
   padding: 1em;
   overflow: hidden;
@@ -121,18 +138,6 @@
   z-index: 0;
 }
 
-.producto-card img {
-  height: 160px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 0 auto 0.8em;
-  display: block;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
-  z-index: 1;
-  position: relative;
-}
-
 .producto-card > * {
   position: relative;
   z-index: 1;
@@ -143,24 +148,33 @@
   box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
 }
 
+.producto-card img {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 0.8em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
 
 .producto-card h4 {
   margin-top: 0.5em;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  color: #000000; /* nombre del producto en amarillo */
+  color: #FFD700; /* nombre del producto en amarillo */
   font-weight: bold;
 }
 
 .producto-card p {
-  color: #0f0e0e !important; /* precio blanco */
+  color: #ffffff !important; /* precio blanco */
   margin: 0.5em 0;
   font-weight: bold;
 }
 
 .producto-card button {
   background-color: #000;
-  color: #fff; /* texto blanco */
+  color: #fff;
   border: 1px solid #FFD700;
   padding: 0.5em 1em;
   border-radius: 5px;
@@ -171,13 +185,79 @@
 
 .producto-card button:hover {
   background-color: #FFD700;
-  color: #000; /* texto negro al hacer hover */
+  color: #000;
 }
 
 
 
 
-/* ANIMACIONES */
+
+#toggle-categorias {
+  
+  display: none;
+  background-image: url('../imgs/BotonCategorias/categorrria.png');
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 250px;
+  margin: 10px auto;
+  padding: 0.8em 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .categoria-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor-platos {
+    flex-direction: column;
+    padding-top: 1em;
+  }
+
+  #toggle-categorias {
+    display: block;
+  }
+/*aca se edita lo que esta adentro del boton categorias*/
+  .filtro-categorias {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 92%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f5f0dc;
+    z-index: 1000;
+    padding: 0;
+    border-right: none;
+  }
+
+  .filtro-categorias.abierto {
+    overflow: hidden;
+    max-height: 800px;
+    padding: 1em;
+  }
+
+  .titulo-categoria {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .categoria-productos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animación entrada sidebar */
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -189,169 +269,131 @@
   }
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 1024px) {
-  .categoria-productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .categoria-productos {
-    grid-template-columns: 1fr;
-  }
-
-  .titulo-categoria {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-
-  .contenedor-licores {
-    flex-direction: column;
-  }
-
-  /* BOTÓN DE CATEGORÍAS EN El CELULAR */
-  #toggle-categorias {
-    display: block;
-    margin: 10px auto 0.5em;
-    padding: 0.8em 1em;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    background-image: url('../imgs/BotonCategorias/categorrria.png');
-    height: 120px;
-    width: 250px;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000;
-  }
-
-  .contenedor-licores {
-    position: relative;
-    padding-top: 1em;
-  }
-
-  /* Menú lateral oculto en móvil */
-  .filtro-categorias {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 95%;
-    max-height: 0;
-    overflow: hidden;
-    background-color: #f5f0dc;
-    z-index: 1000;
-    transition: max-height 0.5s ease-in-out, padding 0.5s ease;
-    padding: 0;
-  }
-
-  .filtro-categorias.abierto {
-    max-height: 500px;
-    padding: 1em;
-  }
-
-  .filtro-categorias h3 {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 1em;
-  }
-
-  .filtro-categorias li {
-    text-align: center;
-    padding: 0.5em 0;
-    font-size: 0.95rem;
-  }
-}
-#carrito-flotante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-#carrito-flotante button {
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-/* Modal básico */
+/* --- Modal para Platos (antes en combos.css) --- */
 .modal {
   display: none;
   position: fixed;
-  z-index: 9999;
-  left: 0; top: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow-y: auto;
+  background-color:   rgba(0, 0, 0, 0.8);
+  padding: 1em;
 }
 
 .modal-content {
-  background: white;
-  margin: 10% auto;
-  padding: 20px;
-  max-width: 400px;
+  background-color: #1a1a1a;
+  border: 2px solid #FFD700;
+  margin: 2em auto;
+  padding: 1.5em;
+  width: 90%;
+  max-width: 350px;
   border-radius: 10px;
+  color: #fff;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
 }
 
 .cerrar {
-  float: right;
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5em;
   cursor: pointer;
-  font-size: 20px;
+  color: #FFD700;
 }
+
+.badge {
+  background-color: #FFD700;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.modal-content h2 {
+  font-family: 'Cinzel', serif;
+  color: #FFD700;
+  font-size: 1.4rem;
+}
+
+.modal-content ul {
+  list-style: square;
+  padding-left: 1.2em;
+  color: #ccc;
+  margin-bottom: 1em;
+}
+
+.modal-content p {
+  color: #ccc;
+  margin: 0.5em 0;
+}
+
+/* Ajustes móviles */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    margin: 1em auto;
+    padding: 1em;
+  }
+  .modal-content h2 { font-size: 1.2rem; }
+  .badge { font-size: 0.75rem; }
+ 
+  }
+
 
 /* Contenedor botones flotantes a la izquierda */
 #botones-flotantes {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  display: flex;
-  flex-direction: row; /* ahora en fila */
-  gap: 10px;
-  z-index: 10000;
+position: fixed;
+bottom: 20px;
+left: 20px;
+display: flex;
+flex-direction: row; /* ahora en fila */
+gap: 10px;
+z-index: 10000;
 }
 
 /* Estilo común para los botones */
 #botones-flotantes button {
-  background-color: #2c2c2c; /* fondo gris oscuro */
-  color: #fff; /* texto blanco */
-  border: 2px solid #FFD700; /* borde dorado */
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: bold;
-  min-width: 90px;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
+background-color: #2c2c2c; /* fondo gris oscuro */
+color: #fff; /* texto blanco */
+border: 2px solid #FFD700; /* borde dorado */
+padding: 8px 14px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 0.9rem;
+font-weight: bold;
+min-width: 90px;
+text-align: center;
+transition: background-color 0.3s ease, color 0.3s ease;
+font-family: 'Open Sans', sans-serif;
 }
 
 /* Hover */
 #botones-flotantes button:hover {
-  background-color: #FFD700; /* fondo dorado */
-  color: #2c2c2c; /* texto oscuro */
-  border-color: #b38f00;
+background-color: #FFD700; /* fondo dorado */
+color: #2c2c2c; /* texto oscuro */
+border-color: #b38f00;
 }
 
 /* Responsive para móvil */
 @media screen and (max-width: 600px) {
-  #botones-flotantes {
-    bottom: 15px;
-    left: 15px;
-    gap: 8px;
-  }
-
-  #botones-flotantes button {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-    min-width: 80px;
-  }
+#botones-flotantes {
+  bottom: 15px;
+  left: 15px;
+  gap: 8px;
 }
 
-
-
+#botones-flotantes button {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  min-width: 80px;
+}
+}
