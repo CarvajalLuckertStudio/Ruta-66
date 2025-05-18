@@ -35,7 +35,7 @@
         <li onclick="filtrar('sandwiches')">Sándwiches</li>
        
         <li onclick="filtrar('lasagna')">Lasagna</li>
-        <li onclick="filtrar('Arroces')">Arroces</li>
+        <li onclick="filtrar('arroces')">Arroces</li>
         <li onclick="filtrar('ensaladas')">Ensaladas/Bowl</li>
         <li onclick="filtrar('pizzas-tradicionales')">Pizzas Tradicionales</li>
         <li onclick="filtrar('pizzas-gourmet')">Pizzas Gourmet</li>
@@ -51,7 +51,7 @@
         <!-- 🔸 ENTRADAS -->
         <section class="categoria-productos entradas">
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" alt="Porky Belly">
+            <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" alt="Porky Belly" onclick="abrirModal('modal-porky-belly')">
             <h4>Porky Belly</h4>
             <p>$19.000</p>
             <div class="producto-card-buttons">
@@ -59,9 +59,9 @@
               <button onclick="agregarAlCarrito('Porky Belly', 19000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_YnpZ281S1X_chorizo-artesanal-nuevo.avif" alt="Chorizo Artesanal">
+            <img src="../../imgs/entradas/w_1200_YnpZ281S1X_chorizo-artesanal-nuevo.avif" alt="Chorizo Artesanal" onclick="abrirModal('modal-chorizo-artesanal')">
             <h4>Chorizo Artesanal</h4>
             <p>$17.000</p>
             <div class="producto-card-buttons">
@@ -69,9 +69,9 @@
               <button onclick="agregarAlCarrito('Chorizo Artesanal', 17000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_ccEmwb2x2k_picada_criolla_3_pax.avif" alt="Picada Criolla pax 3">
+            <img src="../../imgs/entradas/w_1200_ccEmwb2x2k_picada_criolla_3_pax.avif" alt="Picada Criolla pax 3" onclick="abrirModal('modal-picada-criolla')">
             <h4>Picada Criolla pax 3</h4>
             <p>$48.000</p>
             <div class="producto-card-buttons">
@@ -79,9 +79,9 @@
               <button onclick="agregarAlCarrito('Picada Criolla pax 3', 48000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_fMqYtd0I3K_alitas-po-6-nueva.avif" alt="Alitas X6">
+            <img src="../../imgs/entradas/w_1200_fMqYtd0I3K_alitas-po-6-nueva.avif" alt="Alitas X6" onclick="abrirModal('modal-alitas-x6')">
             <h4>Alitas X6</h4>
             <p>$19.000</p>
             <div class="producto-card-buttons">
@@ -89,9 +89,9 @@
               <button onclick="agregarAlCarrito('Alitas X6', 19000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Alitas x12">
+            <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Alitas x12" onclick="abrirModal('modal-alitas-x12')">
             <h4>Alitas x12</h4>
             <p>$39.000</p>
             <div class="producto-card-buttons">
@@ -99,9 +99,9 @@
               <button onclick="agregarAlCarrito('Alitas x12', 35000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_tsKM8CSoux_tour_refajo.avif" alt="Combo Refajo Colombiana">
+            <img src="../../imgs/entradas/w_1200_tsKM8CSoux_tour_refajo.avif" alt="Combo Refajo Colombiana" onclick="abrirModal('modal-combo-refajo')">
             <h4>Combo Refajo Colombiana</h4>
             <p>$65.000</p>
             <div class="producto-card-buttons">
@@ -109,9 +109,9 @@
               <button onclick="agregarAlCarrito('Combo Refajo Colombiana', 65000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_mjHvSyHoul_croquetas-de-jaiba.avif" alt="Croquetas Jaiba">
+            <img src="../../imgs/entradas/w_1200_mjHvSyHoul_croquetas-de-jaiba.avif" alt="Croquetas Jaiba" onclick="abrirModal('modal-croquetas-jaiba')">
             <h4>Croquetas Jaiba</h4>
             <p>$25.000</p>
             <div class="producto-card-buttons">
@@ -119,9 +119,9 @@
               <button onclick="agregarAlCarrito('Croquetas Jaiba', 25000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_74gcW2L9qc_elote-nuevo.avif" alt="Elotes">
+            <img src="../../imgs/entradas/w_1200_74gcW2L9qc_elote-nuevo.avif" alt="Elotes" onclick="abrirModal('modal-elotes')">
             <h4>Elotes</h4>
             <p>$16.000</p>
             <div class="producto-card-buttons">
@@ -129,9 +129,9 @@
               <button onclick="agregarAlCarrito('Elotes', 16000)">Añadir</button>
             </div>
           </div>
-        
+
           <div class="producto-card entradas">
-            <img src="../../imgs/entradas/w_1200_rooqQn6hvJ_ensalada_capressa_2.avif" alt="Ensalada Capresa">
+            <img src="../../imgs/entradas/w_1200_rooqQn6hvJ_ensalada_capressa_2.avif" alt="Ensalada Capresa" onclick="abrirModal('modal-ensalada-capresa')">
             <h4>Ensalada Capresa</h4>
             <p>$19.000</p>
             <div class="producto-card-buttons">
@@ -146,7 +146,11 @@
         <div id="modal-porky-belly" class="modal">
           <div class="modal-content">
             <span class="cerrar" onclick="cerrarModal('modal-porky-belly')">×</span>
-            <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" alt="Porky Belly">
+            <img src="../../imgs/entradas/w_1200_0I58k6wdpB_pork-belly-nuevo.avif" 
+            alt="Porky Belly"
+            width="10%"
+            max-width="1%"> 
+            
             <h2>Porky Belly</h2>
             <p><strong>Precio:</strong> $19.000</p>
             <p>Cerdo crujiente con notas cítricas, acompañado de papa criolla.
@@ -239,7 +243,7 @@
 <!-- 🔸 GRILL 66 -->
 <section class="categoria-productos grill-66">
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/asadotira.png" alt="Asado De Tira">
+    <img src="../../imgs/cortes/asadotira.png" alt="Asado De Tira" onclick="abrirModal('modal-asado-de-tira')">
     <h4>Asado De Tira</h4>
     <p>$53.000</p>
     <div class="producto-card-buttons">
@@ -249,7 +253,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/babybeef.jpeg" alt="Baby Beef">
+    <img src="../../imgs/cortes/babybeef.jpeg" alt="Baby Beef" onclick="abrirModal('modal-baby-beef')">
     <h4>Baby Beef</h4>
     <p>$54.000</p>
     <div class="producto-card-buttons">
@@ -259,7 +263,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/bife de chorizo.png" alt="Bife De Chorizo">
+    <img src="../../imgs/cortes/bife de chorizo.png" alt="Bife De Chorizo" onclick="abrirModal('modal-bife-de-chorizo')">
     <h4>Bife De Chorizo</h4>
     <p>$53.000</p>
     <div class="producto-card-buttons">
@@ -269,7 +273,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/bondiolacerdo.png" alt="Bondiala De Cerdo">
+    <img src="../../imgs/cortes/bondiolacerdo.png" alt="Bondiala De Cerdo" onclick="abrirModal('modal-bondiala-de-cerdo')">
     <h4>Bondiala De Cerdo</h4>
     <p>$40.000</p>
     <div class="producto-card-buttons">
@@ -279,7 +283,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/churrasrocerdo.png" alt="Churrasco De Cerdo">
+    <img src="../../imgs/cortes/churrasrocerdo.png" alt="Churrasco De Cerdo" onclick="abrirModal('modal-churrasco-de-cerdo')">
     <h4>Churrasco De Cerdo</h4>
     <p>$45.000</p>
     <div class="producto-card-buttons">
@@ -289,7 +293,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/Tbone.png" alt="Tbone">
+    <img src="../../imgs/cortes/Tbone.png" alt="Tbone" onclick="abrirModal('modal-Tbone')">
     <h4>Tbone</h4>
     <p>$76.000</p>
     <div class="producto-card-buttons">
@@ -299,7 +303,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/tomahok res.png" alt="Tomahok">
+    <img src="../../imgs/tomahak 2023.jpg" alt="Tomahok" onclick="abrirModal('modal-tomahok-de-res')">
     <h4>Tomahok</h4>
     <p>$118.000</p>
     <div class="producto-card-buttons">
@@ -309,7 +313,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/tomahok.png" alt="Tomahok de Cerdo">
+    <img src="../../imgs/cortes/tomahok.png" alt="Tomahok de Cerdo" onclick="abrirModal('modal-tomahok')">
     <h4>Tomahok de Cerdo</h4>
     <p>$55.000</p>
     <div class="producto-card-buttons">
@@ -319,7 +323,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomo cayena.png" alt="Lomo Fino En Mantequilla De Cayena">
+    <img src="../../imgs/cortes/lomo cayena.png" alt="Lomo Fino En Mantequilla De Cayena" onclick="abrirModal('modal-lomo-fino-en-mantequilla-de-cayena')">
     <h4>Lomo Fino En Mantequilla De Cayena</h4>
     <p>$58.000</p>
     <div class="producto-card-buttons">
@@ -329,7 +333,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomochamp.png" alt="Lomo Fino Salsa Champiñon Bacon">
+    <img src="../../imgs/cortes/lomochamp.png" alt="Lomo Fino Salsa Champiñon Bacon" onclick="abrirModal('modal-lomo-fino-salsa-champinon-bacon')">
     <h4>Lomo Fino Salsa Champiñon Bacon</h4>
     <p>$60.000</p>
     <div class="producto-card-buttons">
@@ -339,7 +343,7 @@
   </div>
 
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomohuerto.png" alt="Lomo Fino Al Huerto">
+    <img src="../../imgs/cortes/lomohuerto.png" alt="Lomo Fino Al Huerto" onclick="abrirModal('modal-lomo-fino-al-huerto')">
     <h4>Lomo Fino Al Huerto</h4>
     <p>$59.000</p>
     <div class="producto-card-buttons">
@@ -347,9 +351,9 @@
       <button onclick="agregarAlCarrito('Lomo Fino Al Huerto', 59000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomojack.png" alt="Lomo Fino a La JackDaniels">
+    <img src="../../imgs/cortes/lomojack.png" alt="Lomo Fino a La JackDaniels" onclick="abrirModal('modal-lomo-fino-a-la-jackdaniels')">
     <h4>Lomo Fino a La JackDaniels</h4>
     <p>$58.000</p>
     <div class="producto-card-buttons">
@@ -357,9 +361,9 @@
       <button onclick="agregarAlCarrito('Lomo Fino a La JackDaniels', 58000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomolangostino.png" alt="Lomo en Salsa de Langostino">
+    <img src="../../imgs/cortes/lomolangostino.png" alt="Lomo en Salsa de Langostino" onclick="abrirModal('modal-lomo-en-salsa-de-langostino')">
     <h4>Lomo en Salsa de Langostino</h4>
     <p>$62.000</p>
     <div class="producto-card-buttons">
@@ -367,9 +371,9 @@
       <button onclick="agregarAlCarrito('Lomo en Salsa de Langostino', 62000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/lomovino.png" alt="Lomo Al Vino">
+    <img src="../../imgs/cortes/lomovino.png" alt="Lomo Al Vino" onclick="abrirModal('modal-lomo-al-vino')">
     <h4>Lomo Al Vino</h4>
     <p>$60.000</p>
     <div class="producto-card-buttons">
@@ -377,9 +381,9 @@
       <button onclick="agregarAlCarrito('Lomo Al Vino', 60000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/newyork.png" alt="New York Steak">
+    <img src="../../imgs/cortes/newyork.png" alt="New York Steak" onclick="abrirModal('modal-new-york-steak')">
     <h4>New York Steak</h4>
     <p>$55.000</p>
     <div class="producto-card-buttons">
@@ -387,9 +391,9 @@
       <button onclick="agregarAlCarrito('New York Steak', 55000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/pechuga.png" alt="Pechuga A La Parrilla">
+    <img src="../../imgs/cortes/pechuga.png" alt="Pechuga A La Parrilla" onclick="abrirModal('modal-pechuga-a-la-parrilla')">
     <h4>Pechuga A La Parrilla</h4>
     <p>$36.000</p>
     <div class="producto-card-buttons">
@@ -397,9 +401,9 @@
       <button onclick="agregarAlCarrito('Pechuga A La Parrilla', 36000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/pechugacapresa.png" alt="Pechuga Capressa">
+    <img src="../../imgs/cortes/pechugacapresa.png" alt="Pechuga Capressa" onclick="abrirModal('modal-pechuga-capressa')">
     <h4>Pechuga Capressa</h4>
     <p>$41.000</p>
     <div class="producto-card-buttons">
@@ -407,9 +411,9 @@
       <button onclick="agregarAlCarrito('Pechuga Capressa', 41000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/pechugachamp.png" alt="Pechuga En Salsa Champiñon">
+    <img src="../../imgs/cortes/pechugachamp.png" alt="Pechuga En Salsa Champiñon" onclick="abrirModal('modal-pechuga-en-salsa-champinon')">
     <h4>Pechuga En Salsa Champiñon</h4>
     <p>$42.000</p>
     <div class="producto-card-buttons">
@@ -417,9 +421,9 @@
       <button onclick="agregarAlCarrito('Pechuga En Salsa Champiñon', 42000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/picaña.png" alt="Picanha">
+    <img src="../../imgs/cortes/picaña.png" alt="Picanha" onclick="abrirModal('modal-picanha')">
     <h4>Picanha</h4>
     <p>$59.000</p>
     <div class="producto-card-buttons">
@@ -427,9 +431,9 @@
       <button onclick="agregarAlCarrito('Picanha', 59000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/punto de anca.png" alt="Punta De Anca">
+    <img src="../../imgs/cortes/punto de anca.png" alt="Punta De Anca" onclick="abrirModal('modal-punta-de-anca')">
     <h4>Punta De Anca</h4>
     <p>$50.000</p>
     <div class="producto-card-buttons">
@@ -437,9 +441,9 @@
       <button onclick="agregarAlCarrito('Punta De Anca', 50000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/rackcostilla.png" alt="Rack De Costilla">
+    <img src="../../imgs/cortes/rackcostilla.png" alt="Rack De Costilla" onclick="abrirModal('modal-rack-de-costilla')">
     <h4>Rack De Costilla</h4>
     <p>$49.000</p>
     <div class="producto-card-buttons">
@@ -447,9 +451,9 @@
       <button onclick="agregarAlCarrito('Rack De Costilla', 49000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/steakpollo.png" alt="Steak De Pollo">
+    <img src="../../imgs/cortes/steakpollo.png" alt="Steak De Pollo" onclick="abrirModal('modal-steak-de-pollo')">
     <h4>Steak De Pollo</h4>
     <p>$41.000</p>
     <div class="producto-card-buttons">
@@ -457,9 +461,9 @@
       <button onclick="agregarAlCarrito('Steak De Pollo', 41000)">Añadir</button>
     </div>
   </div>
-  
+
   <div class="producto-card grill-66">
-    <img src="../../imgs/cortes/ribeye en cama rissoto.png" alt="Ribeye En Cama De Risotto De Queso Azul">
+    <img src="../../imgs/cortes/ribeye en cama rissoto.png" alt="Ribeye En Cama De Risotto De Queso Azul" onclick="abrirModal('modal-ribeye-en-cama-de-risotto-de-queso-azul')">
     <h4>Ribeye En Cama De Risotto De Queso Azul</h4>
     <p>$120.000</p>
     <div class="producto-card-buttons">
@@ -467,7 +471,6 @@
       <button onclick="agregarAlCarrito('Ribeye En Cama De Risotto De Queso Azul', 120000)">Añadir</button>
     </div>
   </div>
-  
 </section>
 
 
@@ -476,6 +479,8 @@
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-asado-de-tira')">×</span>
     <img src="../../imgs/cortes/asadotira.png" alt="Asado De Tira">
+     
+
     <h2>Asado De Tira</h2>
     <p><strong>Precio:</strong> $53.000</p>
     <p>Asado de tira en cocción lenta, en salsa de toronja y cilantro, acompañado de espárragos, tomate cherry, cebollas asadas y col de bruselas, los puedes acompañar con francesa, papa criolla, papa casco o puré.</p>
@@ -484,7 +489,7 @@
 <div id="modal-tomahok-de-res" class="modal">
   <div class="modal-content">
     <span class="cerrar" onclick="cerrarModal('modal-tomahok-de-res')">×</span>
-    <img src="../../imgs/cortes/tomahok res.png" alt="Asado De Tira">
+    <img src="../../imgs/tomahak 2023.jpg" alt="Asado De Tira">
     <h2>Tomahok</h2>
     <p><strong>Precio:</strong> $118.000</p>
     <p>Tomahawk, tomate cherry, espárragos, zanahoria baby, cebolla a la parrilla, coles de Bruselas , bañado en mantequilla saborizada y ron de la casa, acompañado de papa puré,francesa, casco o criolla.</p>
