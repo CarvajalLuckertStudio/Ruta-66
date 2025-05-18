@@ -212,20 +212,21 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .modal-content img {
-    width: 100%;
-    height: auto;
-    max-height: 50vh; /* Ajusta según necesidad */
+  @media (max-width: 600px) {
+    .modal-content img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        margin: 0 auto; /* Centrar imagen del modal */
+    }
+    
   }
-  
-}
 
-@media screen and (max-width: 600px) {
-  .contenedor-platos {
-    flex-direction: column;
-    padding-top: 1em;
-  }
+  @media screen and (max-width: 600px) {
+    .contenedor-platos {
+      flex-direction: column;
+      padding-top: 1em;
+    }
 
   #toggle-categorias {
     display: block;
