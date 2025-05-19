@@ -110,7 +110,7 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-
+/* tamaño de los cuadros de los productos */
 .producto-card {
   position: relative;
   width: 94%;
@@ -123,7 +123,7 @@ body {
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
-
+/*modal foto de atras*/
 .producto-card::before {
   content: "";
   position: absolute;
@@ -212,11 +212,12 @@ body {
 }
 
 /* RESPONSIVE */
-  @media (max-width: 600px) {
+/*tamaño de la foto de los modales*/
+  @media (max-width: 900px) {
     .modal-content img {
-        width: 100%;
-        height: auto;
-        max-height: 250px;
+        width: 1px;
+        height: 300px;
+        max-height: auto;
         margin: 0 auto; /* Centrar imagen del modal */
     }
     
