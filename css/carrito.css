@@ -39,23 +39,35 @@
 }
 
 .modal-contenido-carrito {
-    background: rgb(25, 24, 24);
-    /* Si quieres un fondo con imagen: */
-    background-image: url('../imgs/NocheRuta66.png'); /* Cambia la ruta a tu imagen */
-    background-size: cover; /* o 'contain' dependiendo del efecto que busques */
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Resto de tus estilos existentes */
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 340px;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    filter: brightness(1.1); /* Ajusta este valor (1.3 = 30% más claro) */
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 340px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: none; /* Eliminar fondo directo */
+  z-index: 1;
+}
 
-  }
+.modal-contenido-carrito::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../imgs/NocheRuta66.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); /* solo aplica a la imagen */
+  border-radius: 10px;
+  z-index: -1; /* Coloca detrás del contenido */
+}
+
+
+  
 
 
 .cerrar-modal {

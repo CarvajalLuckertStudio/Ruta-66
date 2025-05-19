@@ -216,7 +216,7 @@ body {
   @media (max-width: 900px) {
     .modal-content img {
         width: 1px;
-        height: 300px;
+        height: auto;
         max-height: auto;
         margin: 0 auto; /* Centrar imagen del modal */
     }
