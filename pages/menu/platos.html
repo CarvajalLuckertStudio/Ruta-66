@@ -28,9 +28,10 @@
         <li onclick="filtrar('entradas')">Entradas</li>
         <li onclick="filtrar('grill-66')">Grill 66</li> 
          <li onclick="filtrar('ruta-del-mar')">Ruta del mar</li>
+      
+        <li onclick="filtrar('hamburguesas')">Hamburguesas</li>
+        <li onclick="filtrar('parrillada')">Parrilladas</li>
         <li onclick="filtrar('menu-infantil')">Menú Infantil</li>
-                <li onclick="filtrar('hamburguesas')">Hamburguesas</li>
-
         <li onclick="filtrar('pastas')">Pastas</li>
         <li onclick="filtrar('sandwiches')">Sándwiches</li>
        
@@ -93,7 +94,7 @@
           <div class="producto-card entradas">
             <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Alitas x12" onclick="abrirModal('modal-alitas-x12')">
             <h4>Alitas x12</h4>
-            <p>$39.000</p>
+            <p>$35.000</p>
             <div class="producto-card-buttons">
               <button onclick="abrirModal('modal-alitas-x12')">Ver</button>
               <button onclick="agregarAlCarrito('Alitas x12', 35000)">Añadir</button>
@@ -195,7 +196,7 @@
             <span class="cerrar" onclick="cerrarModal('modal-alitas-x12')">×</span>
             <img src="../../imgs/entradas/w_1200_2SqmhvevhK_alitas-por-12.avif" alt="Alitas x12">
             <h2>Alitas x12</h2>
-            <p><strong>Precio:</strong> $3.000</p>
+            <p><strong>Precio:</strong> $35 .000</p>
             <p>12 unidades bañadas en salsa bbq de la casa o mermelada de aji picante criollo y papas.</p>
           </div>
         </div>
@@ -238,7 +239,58 @@
             <p><strong>Precio:</strong> $19.000</p>
             <p>Tomate cherry, queso de búfala, pesto, albahaca fresca, parmesano y reduccion de vino tinto.</p>
           </div>
+
+<!-- 🔸 parrillas-->
+         <section class="categoria-productos parrillada">
         </div>
+          <div class="producto-card parrillada">
+            <img src="../../imgs/parrilladas/Ruta compartir 2 pax.jpg" alt="parrillada" onclick="abrirModal('parrillada')">
+            <h4>Parrillada X2</h4>
+            <p>$70.000</p>
+            <div class="producto-card-buttons">
+              <button onclick="abrirModal('modal-parrillada')">Ver</button>
+              <button onclick="agregarAlCarrito('Parrillada X2', 70000)">Añadir</button>
+            </div>
+          </div>
+          <section class="categoria-productos parrillada">
+            
+          </div>
+            <div class="producto-card parrillada">
+              <img src="../../imgs/parrilladas/parrilada4.avif" alt="parrillada" onclick="abrirModal('parrilladax4')">
+              <h4>Parrilada X4</h4>
+              <p>$130.000</p>
+              <div class="producto-card-buttons">
+                <button onclick="abrirModal('modal-parrilladax4')">Ver</button>
+                <button onclick="agregarAlCarrito('Parrillada X4', 130000)">Añadir</button>
+              </div>
+            </div>
+
+</section>    
+
+        <!-- Modales de Parrilladas -->
+
+
+<div id="modal-parrillada" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-parrillada')">×</span>
+    <img src="../../imgs/parrilladas/Ruta compartir 2 pax.jpg" alt="Parrilada X2">
+    
+    <h2>Parrillada X2</h2>
+    <p><strong>Precio:</strong> $70.000</p>
+  </div>
+
+</div>
+<div id="modal-parrilladax4" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal('modal-parrilladax4')">×</span>
+    <img src="../../imgs/parrilladas/parrilada4.avif" alt="Parrilada X4">
+    
+    <h2>Parrillada X4</h2>
+    <p><strong>Precio:</strong> $70.000</p>
+  </div>
+
+</div>
+
 
 <!-- 🔸 GRILL 66 -->
 <section class="categoria-productos grill-66">
@@ -2117,6 +2169,7 @@
   <button id="btn-atras">Atrás</button>
 </div>
 
+<script src="../../js/platos.js"></script>
 
 <script src="../../js/carrito.js"></script>
 

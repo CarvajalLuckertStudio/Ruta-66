@@ -300,11 +300,22 @@ body {
 
 .modal-content img {
   width: 85%;
+  max-width: 1100px;  /* Ancho máximo */
+  max-height: 1300px; /* Alto máximo */
+  height: auto;
   border-radius: 8px;
   margin-bottom: 1em;
-  display: block; /* Esto es importante para que funcione margin auto */
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+
+}
+@media (max-width: 480px) {
+  .modal-content img {
+    max-width: 100 px; /* En móviles se adapta al ancho del contenedor */
+    max-height: 300px  ; /* Permite que la altura sea flexible */
+  }
 }
 
 .cerrar {
@@ -404,4 +415,5 @@ border-color: #b38f00;
   font-size: 0.8rem;
   min-width: 80px;
 }
+
 }
